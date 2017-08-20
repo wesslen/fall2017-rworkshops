@@ -63,21 +63,29 @@ We're working on redesigning the Project Mosaic consultation reservation website
 
 # Series structure
 
-Each session will be divided into three blocks: an introduction to R (R Essentials), intermediate R skills and computational social science tools. 
+Each session will be divided into three blocks: 
+
+1. An introduction to R (basic skills, dataframes, tidyverse)
+
+2. Intermediate R skills (RMarkdown, Git, APIs)
+
+3. Computational social science tools (social network, machine learning and text) 
 
 Each workshop is standalone -- so participants aren't required to come to all although each workshop will build off the skills from previous workshops.
+
+Participants in the later workshops are **strongly** encouraged to review materials from at least the first three workshops.
 
 # Prerequisites
 
 The first three sessions assumes no knowledge of R or programming skills. 
 
-Later sessions will assume knowledge of probability and linear regression
+Later sessions will assume knowledge of materials from the first three workshops as well as probability, basic statistics and linear regression. 
 
 # Software 
 
 This course will use [R](https://www.r-project.org/), which is a free and open-source programming language primarily used for statistics and data analysis. 
 
-We will also use [RStudio](https://www.rstudio.com/), which is an easy-to-use interface to R. 
+We will also use [RStudio](https://www.rstudio.com/), which is an easy-to-use interface GUI for R. 
 
 **Easiest Approach: Install Locally**
 
