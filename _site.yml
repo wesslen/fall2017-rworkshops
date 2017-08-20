@@ -8,7 +8,7 @@ navbar:
       href: "index.html"
     - text: "Schedule"
       href: "schedule.html"
-    - text: "Code"
+    - text: "Workshops"
       menu:
       - text: "Intro to R (1)"
         href: "schedule.html#week-1"
