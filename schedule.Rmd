@@ -238,7 +238,7 @@ title: Course outline and readings
 <div class="panel panel-default">
 <div class="panel-heading">
 <h2 id="week-8" class="panel-title">
-<a data-toggle="collapse" href="#collapse8">Week 8: 11/1. Machine Learning</a>
+<a data-toggle="collapse" href="#collapse8">Week 8: 11/01. Machine Learning</a>
 </h2>
 </div>
 <div id="collapse8" class="panel-collapse collapse in" style="margin:12px">
