@@ -99,11 +99,11 @@ For Python users more use to Jupyter notebooks, see this [Docker Hub repository]
 
 Science should be open, and this course builds up other open licensed material, so unless otherwise noted, all materials for this class are licensed under a <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
 
-The design and a lot of content of this course is based on materials by [Pablo Barberá](http://pablobarbera.com/).
+The design and a lot of content of this course is based on materials by [Pablo Barberá](http://pablobarbera.com/). The layout for this website was designed by [Jeffrey Arnold](http://www.jrnold.me/).
 
-For advanced users, I strongly recommend his [Fall 2017 USC Measurement Models and Statistical Computing Course](https://github.com/pablobarbera/POIR613) or Benjamin Soltoff's [U of Chicago Computing for the Social Sciences Course](http://cfss.uchicago.edu/index.html). 
+For advanced users, I strongly recommend Pablo's [Fall 2017 USC Measurement Models and Statistical Computing Course](https://github.com/pablobarbera/POIR613) or Benjamin Soltoff's [U of Chicago Computing for the Social Sciences Course](http://cfss.uchicago.edu/index.html). 
 
-His materials referenced work from:
+Pablo's materials referenced work from:
 
 * [Dan Cervone](http://dcervone.com/)
 
@@ -134,8 +134,6 @@ My materials referenced work from:
 * [Katya Ognyanova](http://kateto.net/)
 
 * [Benjamin Soltoff](http://cfss.uchicago.edu/index.html)
-
-The layout for this website was designed by [Jeffrey Arnold](http://www.jrnold.me/).
 
 The source for the materials of this course is on GitHub at <a href="https://github.com/wesslen/fall2017-rworkshops">wesslen/fall2017-rworkshops</a>
 
