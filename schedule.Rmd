@@ -11,7 +11,7 @@ title: Course outline and readings
 </h2>
 </div>
 <div id="collapse1" class="panel-collapse collapse in" style="margin:12px">
-<p><b>Topics:</b> Introduction to R and R Studio. Packages. Working Directory. Dataframes. Functions.</p>
+<p><b>Topics:</b> Introduction to R and R Studio. Packages. Working Directory. Dataframes and functions.</p>
 
 <h4>Workshop material</h4>
 <ul>
@@ -21,11 +21,6 @@ title: Course outline and readings
 </li>
 </ul>
 
-<h4>Optional CSS Readings</h4>
-<ul>
-<li><p>Lazer, D., Pentland, A. S., Adamic, L., Aral, S., Barabasi, A. L., Brewer, D., ... & Jebara, T. (2009). <a href="http://fowler.ucsd.edu/computational_social_science.pdf">Life in the network: the coming age of computational social science</a>. <i>Science</i>, 323(5915), 721-3.</p>
-</li>
-</ul>
 </div>
 </div>
 </div>
@@ -40,7 +35,7 @@ title: Course outline and readings
 </div>
 <div id="collapse2" class="panel-collapse collapse in" style="margin:12px">
 
-<p><b>Topics:</b>Importing data (csv, Stata, SAS). Data wrangling (reshape, reshape2). Aggregation and filtering (plyr, dplyr).</p>
+<p><b>Topics:</b> Importing data (csv, Stata, SAS). Data wrangling (reshape, reshape2). Aggregation and filtering (dplyr).</p>
 
 <h4>Workshop material</h4>
 <ul>
@@ -69,7 +64,7 @@ title: Course outline and readings
 </div>
 <div id="collapse3" class="panel-collapse collapse in" style="margin:12px">
 
-<p><b>Topics:</b>Overview of Tidyverse: tidyr, dplyr, ggplot2, readr, purrr</p>
+<p><b>Topics:</b> Overview of Tidyverse: tidyr, dplyr, ggplot2, readr, purrr</p>
 
 
 <h4>Background material</h4>
@@ -116,7 +111,7 @@ title: Course outline and readings
 
 <h4>Code</h4>
 <ul>
-<li><p><a href="http://rmarkdown.rstudio.com/lesson-1.html">RMarkdown</a></p>
+<li><p><a href="http://rmarkdown.rstudio.com/lesson-1.html">RStudio RMarkdown Lessons</a></p>
 </li>
 </ul>
 
@@ -151,6 +146,8 @@ title: Course outline and readings
 <h4>Code</h4>
 <ul>
 <li><p><a href="">ggplot2</a></p>
+</li>
+<li><p><a href="">HTMLWidgets</a></p>
 </li>
 </ul>
 
@@ -210,15 +207,19 @@ title: Course outline and readings
 </div>
 <div id="collapse7" class="panel-collapse collapse in" style="margin:12px">
 
-<p><b>Topics:</b> Basic concepts in social network analysis. Types of random networks. Strong and weak ties. Network visualization.</p>
+<p><b>Topics:</b> Basic concepts in social network analysis. Centrality measures. Network visualization.</p>
 
-<h4>Background material</h4>
+<h4>Materials</h4>
+<ul>
+<li><p>Ognyanova, K. (2017). <a href="http://kateto.net/network-visualization">Network visualization with R</a>. <i> POLNET 2017 Workshop</i>, Columbus, OH.<p>
+</li>
+</ul>
+
+<h4>Optional</h4>
 <ul>
 <li><p>Chapters 1, 2, and 3 in Easley, D., & Kleinberg, J. (2010). <a href="https://www.cs.cornell.edu/home/kleinber/networks-book/">Networks, crowds, and markets</a>. Cambridge University Press.<p>
 </li>
 <li><p>McPherson, M., Smith-Lovin, L., & Cook, J. M. (2001). <a href="http://www.annualreviews.org/doi/abs/10.1146/annurev.soc.27.1.415">Birds of a feather: Homophily in social networks.</a> <i>Annual review of sociology</i>, 27(1), 415-444.</p>
-</li>
-<li><p>Christakis, N. A., & Fowler, J. H. (2007). <a href="http://www.nejm.org/doi/full/10.1056/NEJMsa066082#t=article">The spread of obesity in a large social network over 32 years</a>. <i>New England Journal of Medicine</i>, 357, 370-379.</p>
 </li>
 </ul>
 
@@ -226,7 +227,7 @@ title: Course outline and readings
 <ul>
 <li><p><a href="">Social network analysis</a></p>
 </li>
-<li><p><a href="">Network visualization</a></p>
+<li><p><a href="">Interactive Visualizations with visNetwork</a></p>
 </li>
 </ul>
 </div>
@@ -340,6 +341,8 @@ title: Course outline and readings
 
 <h4>Code</h4>
 <ul>
+<li><p><a href="">Text Classification</a></p>
+</li>
 <li><p><a href="">Topic models</a></p>
 </li>
 </ul>

@@ -13,19 +13,19 @@
 
 <title>Course outline and readings</title>
 
-<script src="site_libs/jquery/jquery.min.js"></script>
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<link href="site_libs/bootstrap/css/cosmo.min.css" rel="stylesheet" />
-<script src="site_libs/bootstrap/js/bootstrap.min.js"></script>
-<script src="site_libs/bootstrap/shim/html5shiv.min.js"></script>
-<script src="site_libs/bootstrap/shim/respond.min.js"></script>
-<script src="site_libs/jqueryui/jquery-ui.min.js"></script>
-<link href="site_libs/tocify/jquery.tocify.css" rel="stylesheet" />
-<script src="site_libs/tocify/jquery.tocify.js"></script>
-<script src="site_libs/navigation/tabsets.js"></script>
-<link href="site_libs/highlightjs/textmate.css" rel="stylesheet" />
-<script src="site_libs/highlightjs/highlight.js"></script>
-<link href="site_libs/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+<link href="site_libs/bootstrap-3.3.5/css/cosmo.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-1.1/textmate.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-1.1/highlight.js"></script>
+<link href="site_libs/font-awesome-4.5.0/css/font-awesome.min.css" rel="stylesheet" />
 
 
 <style type="text/css">code{white-space: pre;}</style>
@@ -365,7 +365,7 @@ div.tocify {
 </div>
 <div id="collapse1" class="panel-collapse collapse in" style="margin:12px">
 <p>
-<b>Topics:</b> Introduction to R and R Studio. Packages. Working Directory. Dataframes. Functions.
+<b>Topics:</b> Introduction to R and R Studio. Packages. Working Directory. Dataframes and functions.
 </p>
 <h4>
 Workshop material
@@ -382,16 +382,6 @@ R Studio (2017). <a href="https://www.rstudio.com/wp-content/uploads/2016/01/rst
 </p>
 </li>
 </ul>
-<h4>
-Optional CSS Readings
-</h4>
-<ul>
-<li>
-<p>
-Lazer, D., Pentland, A. S., Adamic, L., Aral, S., Barabasi, A. L., Brewer, D., â€¦ &amp; Jebara, T. (2009). <a href="http://fowler.ucsd.edu/computational_social_science.pdf">Life in the network: the coming age of computational social science</a>. <i>Science</i>, 323(5915), 721-3.
-</p>
-</li>
-</ul>
 </div>
 </div>
 </div>
@@ -404,7 +394,7 @@ Lazer, D., Pentland, A. S., Adamic, L., Aral, S., Barabasi, A. L., Brewer, D., â
 </div>
 <div id="collapse2" class="panel-collapse collapse in" style="margin:12px">
 <p>
-<b>Topics:</b>Importing data (csv, Stata, SAS). Data wrangling (reshape, reshape2). Aggregation and filtering (plyr, dplyr).
+<b>Topics:</b> Importing data (csv, Stata, SAS). Data wrangling (reshape, reshape2). Aggregation and filtering (dplyr).
 </p>
 <h4>
 Workshop material
@@ -443,7 +433,7 @@ R Studio (2017). <a href="https://www.rstudio.com/resources/webinars/importing-d
 </div>
 <div id="collapse3" class="panel-collapse collapse in" style="margin:12px">
 <p>
-<b>Topics:</b>Overview of Tidyverse: tidyr, dplyr, ggplot2, readr, purrr
+<b>Topics:</b> Overview of Tidyverse: tidyr, dplyr, ggplot2, readr, purrr
 </p>
 <h4>
 Background material
@@ -515,7 +505,7 @@ Code
 <ul>
 <li>
 <p>
-<a href="http://rmarkdown.rstudio.com/lesson-1.html">RMarkdown</a>
+<a href="http://rmarkdown.rstudio.com/lesson-1.html">RStudio RMarkdown Lessons</a>
 </p>
 </li>
 </ul>
@@ -560,6 +550,11 @@ Code
 <li>
 <p>
 <a href="">ggplot2</a>
+</p>
+</li>
+<li>
+<p>
+<a href="">HTMLWidgets</a>
 </p>
 </li>
 </ul>
@@ -646,10 +641,20 @@ Code
 <div id="collapse7" class="panel-collapse collapse in" style="margin:12px">
 
 <p>
-<b>Topics:</b> Basic concepts in social network analysis. Types of random networks. Strong and weak ties. Network visualization.
+<b>Topics:</b> Basic concepts in social network analysis. Centrality measures. Network visualization.
 </p>
 <h4>
-Background material
+Materials
+</h4>
+<ul>
+<li>
+<p>
+Ognyanova, K. (2017). <a href="http://kateto.net/network-visualization">Network visualization with R</a>. <i> POLNET 2017 Workshop</i>, Columbus, OH.
+<p>
+</li>
+</ul>
+<h4>
+Optional
 </h4>
 <ul>
 <li>
@@ -660,11 +665,6 @@ Chapters 1, 2, and 3 in Easley, D., &amp; Kleinberg, J. (2010). <a href="https:/
 <li>
 <p>
 McPherson, M., Smith-Lovin, L., &amp; Cook, J. M. (2001). <a href="http://www.annualreviews.org/doi/abs/10.1146/annurev.soc.27.1.415">Birds of a feather: Homophily in social networks.</a> <i>Annual review of sociology</i>, 27(1), 415-444.
-</p>
-</li>
-<li>
-<p>
-Christakis, N. A., &amp; Fowler, J. H. (2007). <a href="http://www.nejm.org/doi/full/10.1056/NEJMsa066082#t=article">The spread of obesity in a large social network over 32 years</a>. <i>New England Journal of Medicine</i>, 357, 370-379.
 </p>
 </li>
 </ul>
@@ -679,7 +679,7 @@ Code
 </li>
 <li>
 <p>
-<a href="">Network visualization</a>
+<a href="">Interactive Visualizations with visNetwork</a>
 </p>
 </li>
 </ul>
@@ -850,6 +850,11 @@ Denny, M. J., &amp; Spirling, A. (2017). <a href="http://www.nyu.edu/projects/sp
 Code
 </h4>
 <ul>
+<li>
+<p>
+<a href="">Text Classification</a>
+</p>
+</li>
 <li>
 <p>
 <a href="">Topic models</a>

@@ -2,9 +2,7 @@
 title: Help me help you
 ---
 
-*This help page was created by [Jeffrey Arnold](http://www.jrnold.me/). 
-
-It was better than anything I could ever make and he deserves all of the credit for this phenomenal resource.*
+> This help page was created by [Jeffrey Arnold](http://www.jrnold.me/). It was better than anything I could ever make and he deserves all of the credit for this phenomenal resource.*
 
 A good place to start is [Rstudio's guide for getting help with R]( https://support.rstudio.com/hc/en-us/articles/200552336-Getting-Help-with-R)
 

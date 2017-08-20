@@ -67,7 +67,7 @@ Each session will be divided into three blocks:
 
 1. An introduction to R (basic skills, dataframes, tidyverse)
 
-2. Intermediate R skills (RMarkdown, Git, APIs)
+2. Intermediate R skills (RMarkdown, Git, Visualizations, APIs)
 
 3. Computational social science tools (social network, machine learning and text) 
 
@@ -143,10 +143,10 @@ My materials referenced work from:
 
 * [Benjamin Soltoff](http://cfss.uchicago.edu/index.html)
 
-The source for the materials of this course is on GitHub at <a href="https://github.com/wesslen/Fall-2017-R-Workshop-Series">wesslen/Fall-2017-R-Workshop-Series</a>
+The source for the materials of this course is on GitHub at <a href="https://github.com/wesslen/fall2017-rworkshops">wesslen/fall2017-rworkshops</a>
 
 # Feedback
 
-If you have any feedback on the course or find any typos or errors in this website go to [issues](https://github.com/wesslen/Fall-2017-R-Workshop-Series/issues), click on the "New Issue" button to create a new issue, and add your suggestion or describe the problem.
+If you have any feedback on the course or find any typos or errors in this website go to [issues](https://github.com/wesslen/fall2017-rworkshops/issues), click on the "New Issue" button to create a new issue, and add your suggestion or describe the problem.
 
 
