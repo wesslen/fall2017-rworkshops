@@ -1,0 +1,60 @@
+name: "RWorkshops"
+exclude: ["README.md", "bib/*", "data"]
+output_dir: "docs"
+navbar:
+  title: "R Workshops"
+  left:
+    - text: "Overview"
+      href: "index.html"
+    - text: "Schedule"
+      href: "schedule.html"
+    - text: "Code"
+      menu:
+      - text: "Intro to R (1)"
+        href: "schedule.html#week-1"
+      - text: "Data Management (2)"
+        href: "schedule.html#week-2"
+      - text: "Tidyverse (3)"
+        href: "schedule.html#week-3"
+      - text: "RMarkdown & Git (4)"
+        href: "schedule.html#week-4"
+      - text: "Visualizations (5)"
+        href: "schedule.html#week-5"
+      - text: "Data Acquisition (APIs) (6)"
+        href: "schedule.html#week-6"
+      - text: "Social Network (7)"
+        href: "schedule.html#week-7"
+      - text: "Machine Learning (8)"
+        href: "schedule.html#week-8"
+      - text: "Intro to Text (9)"
+        href: "schedule.html#week-9"
+      - text: "Text as Data (10)"
+        href: "schedule.html#week-10"
+    - text: "Resources"
+      menu:
+      - text: "Books"
+        href: "resources/books.html"
+      - text: "Online Tutorials"
+        href: "resources/onlinetutorials.html"
+  right:
+    - icon: fa-github fa-lg
+      href: https://github.com/wesslen
+
+output:
+  html_document:
+    theme: cosmo
+    highlight: textmate
+    css: styles.css
+    self_contained: false
+    toc: true
+    toc_depth: 2
+    toc_float:
+      collapsed: true
+    html5: true
+    md_extensions: "+raw_html+header_attributes"
+    pandoc_args: [
+    ]
+    includes:
+      in_header: include/in_header.html
+      after_body: include/after_body.html
+      before_body: include/before_body.html

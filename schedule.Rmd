@@ -1,0 +1,351 @@
+---
+title: Course outline and readings
+---
+
+<div class="panel-group">
+<div class="panel panel-default">
+<div class="panel-heading">
+
+<h2 id="week-1" class="panel-title">
+<a data-toggle="collapse" href="#collapse1">Week 1: 09/06. Introduction to R</a>
+</h2>
+</div>
+<div id="collapse1" class="panel-collapse collapse in" style="margin:12px">
+<p><b>Topics:</b> Introduction to R and R Studio. Packages. Working Directory. Dataframes. Functions.</p>
+
+<h4>Workshop material</h4>
+<ul>
+<li><p>Anderson, B. (2017). <a href="https://github.com/geanders/RProgrammingForResearch/raw/master/slides/CourseNotes_Week1.pdf">Week 1 Slides: Preliminaries in R.</a> <i>R Programming for Research Course</i>.</p>
+</li>
+<li><p>R Studio (2017). <a href="https://www.rstudio.com/wp-content/uploads/2016/01/rstudio-IDE-cheatsheet.pdf">R Studio IDE Cheatsheet.</a> </p>
+</li>
+</ul>
+
+<h4>Optional CSS Readings</h4>
+<ul>
+<li><p>Lazer, D., Pentland, A. S., Adamic, L., Aral, S., Barabasi, A. L., Brewer, D., ... & Jebara, T. (2009). <a href="http://fowler.ucsd.edu/computational_social_science.pdf">Life in the network: the coming age of computational social science</a>. <i>Science</i>, 323(5915), 721-3.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+
+
+<div class="panel-group">
+<div class="panel panel-default">
+<div class="panel-heading">
+<h2 id="week-2" class="panel-title">
+<a data-toggle="collapse" href="#collapse2">Week 2: 09/13. Data Management</a>
+</h2>
+</div>
+<div id="collapse2" class="panel-collapse collapse in" style="margin:12px">
+
+<p><b>Topics:</b> Essentials to handling data in R. Importing data (csv, Stata, SAS). Data wrangling (reshape, reshape2). Aggregation and filtering (plyr, dplyr)</p>
+
+<h4>Workshop material</h4>
+<ul>
+<li><p>Anderson, B. (2017). <a href="https://github.com/geanders/RProgrammingForResearch/raw/master/slides/CourseNotes_Week2.pdf">Week 2 Slides: Entering & Cleaning Data.</a> <i>R Programming for Research Course</i>.</p>
+</li>
+<li><p>R Studio (2017). <a href="https://github.com/rstudio/cheatsheets/raw/master/source/pdfs/data-import-cheatsheet.pdf">R Studio Data Import Cheatsheet.</a> </p>
+</li>
+</ul>
+
+<h4>Optional Readings</h4>
+<ul>
+<li><p>R Studio (2017). <a href="https://www.rstudio.com/resources/webinars/importing-data-into-r/">R Studio Importing Data into R Webinar.</a> </p>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+
+<div class="panel-group">
+<div class="panel panel-default">
+<div class="panel-heading">
+<h2 id="week-3" class="panel-title">
+<a data-toggle="collapse" href="#collapse3">Week 3: 09/20. Tidyverse</a>
+</h2>
+</div>
+<div id="collapse3" class="panel-collapse collapse in" style="margin:12px">
+
+<p><b>Topics:</b> Overview of Tidyverse: tidyr, dplyr, ggplot2, readr, purrr</p>
+
+
+<h4>Background material</h4>
+<ul>
+<li><p>R Studio (2017). <a href="https://www.tidyverse.org/">Tidyverse.</a> </p>
+</li>
+<li><p>Soltoff, B. (2017). <a href="http://cfss.uchicago.edu/extras/cm003_slides.html">Data transformation and exploratory data analysis slides</a>. <i>Computing for the Social Sciences</i></p>
+</li>
+<li><p>R Studio (2017). <a href="https://github.com/rstudio/cheatsheets/raw/master/source/pdfs/data-transformation-cheatsheet.pdf">R Studio Data Transformation Cheatsheet .</a> </p>
+</li>
+</ul>
+
+<h4>Code</h4>
+<ul>
+<li><p>Soltoff, B. (2017). <a href="http://cfss.uchicago.edu/datawrangle_dplyr.html">`dplyr` in brief</a>. <i>Computing for the Social Sciences</i></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+
+
+
+<div class="panel-group">
+<div class="panel panel-default">
+<div class="panel-heading">
+<h2 id="week-4" class="panel-title">
+<a data-toggle="collapse" href="#collapse4">Week 4: 09/27. Reproducible Research</a>
+</h2>
+</div>
+<div id="collapse4" class="panel-collapse collapse in" style="margin:12px">
+
+<p><b>Topics:</b> R Markdown. Introduction to Git</p>
+
+<h4>Background material</h4>
+<ul>
+<li><p>Anderson, B. (2017). <a href="https://github.com/geanders/RProgrammingForResearch/raw/master/slides/CourseNotes_Week5.pdf">Week 5 Slides: Reproducible Research.</a> <i>R Programming for Research Course</i>.</p>
+</li>
+<li><p>R Studio (2016). <a href="https://www.rstudio.com/wp-content/uploads/2016/03/rmarkdown-cheatsheet-2.0.pdf">RMarkdown Cheatsheet .</a> </p>
+</li>
+<li><p>Wickham, H. (2015). <a href="http://r-pkgs.had.co.nz/git.html">Git and Github.</a> <i>R Packages</i> </p>
+</li>
+</ul>
+
+
+
+<h4>Code</h4>
+<ul>
+<li><p><a href="http://rmarkdown.rstudio.com/lesson-1.html">RMarkdown</a></p>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+
+
+
+<div class="panel-group">
+<div class="panel panel-default">
+<div class="panel-heading">
+<h2 id="week-5" class="panel-title">
+<a data-toggle="collapse" href="#collapse5">Week 5: 10/11. Visualizations</a>
+</h2>
+</div>
+<div id="collapse5" class="panel-collapse collapse in" style="margin:12px">
+
+<p><b>Topics:</b> Introduction to visualizations. Static visualizations like ggplot2. Interactive visualizations using HTMLWidgets.</p>
+
+<h4>Background material</h4>
+<ul>
+<li><p>R Studio. (2017) <a href="http://www.htmlwidgets.org/">R Studio HTML Widgets</a>.</p>
+</li>
+<li><p>R Studio. (2017) <a href="http://shiny.rstudio.com/">R Studio Shiny</a>.</p>
+</li>
+<li><p>R Studio. (2017) <a href="https://www.rstudio.com/wp-content/uploads/2016/11/ggplot2-cheatsheet-2.1.pdf">R Studio Data Visualization Cheatsheet</a>.</p>
+</li>
+</ul>
+
+
+<h4>Code</h4>
+<ul>
+<li><p><a href="">ggplot2</a></p>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+
+<div class="panel-group">
+<div class="panel panel-default">
+<div class="panel-heading">
+<h2 id="week-6" class="panel-title">
+<a data-toggle="collapse" href="#collapse6">Week 6: 10/18. Acquiring Data through API's</a>
+</h2>
+</div>
+<div id="collapse6" class="panel-collapse collapse in" style="margin:12px">
+
+<p><b>Topics:</b> Define API's. Twitter's Public API (REST and Stream). Facebook API.</p>
+
+<h4>Background material</h4>
+<ul>
+<li><p>Kearney, M. (2017). <a href="https://mkearney.github.io/rtweet/index.html"> rtweet </a>. GitHub repository. 
+</li>
+<li><p>Barberá, P. (2017). <a href="https://github.com/pablobarbera/Rfacebook"> Rfacebook </a>. GitHub repository.
+</li>
+</ul>
+
+<h4>Optional Readings</h4>
+<ul>
+<li><p>Tufekci, Z. (2014). <a href="https://arxiv.org/pdf/1403.7400.pdf"> Big questions for social media big data: Representativeness, validity and other methodological pitfalls.</a> arXiv preprint arXiv:1403.7400.<p>
+</li>
+<li><p>Morstatter, F., & Liu, H. (2017). <a href="http://www.public.asu.edu/~fmorstat/paperpdfs/osnem_preprint.pdf"> Discovering, assessing, and mitigating data bias in social media.</a> Online Social Networks and Media, 1, 1-13.<p>
+</li>
+</ul>
+
+
+<h4>Code</h4>
+<ul>
+<li><p><a href="">Twitter REST API</a></p>
+</li>
+<li><p><a href="">Twitter Streaming API</a></p>
+</li>
+<li><p><a href="">Facebook API</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div class="panel-group">
+<div class="panel panel-default">
+<div class="panel-heading">
+<h2 id="week-7" class="panel-title">
+<a data-toggle="collapse" href="#collapse7">Week 7: 10/25. Social Networks</a>
+</h2>
+</div>
+<div id="collapse7" class="panel-collapse collapse in" style="margin:12px">
+
+<p><b>Topics:</b> Basic concepts in social network analysis. Types of random networks. Strong and weak ties. Network visualization.</p>
+
+<h4>Background material</h4>
+<ul>
+<li><p>Sinclair, B. (2016). Network Structure and Social Outcomes: Network Analysis for Social Science, in Alvarez, M. (ed.) Computational Social Science. Cambridge: Cambridge University Press. [<a href="https://library.usc.edu/uhtbin/cgisirsi/x/0/0/57/5/3?searchdata1=5096841{CKEY}&searchfield1=GENERAL^SUBJECT^GENERAL^^&user_id=WEBSERVER">Full text available through USC libraries</a>]
+</li>
+<li><p>Chapters 1, 2, and 3 in Easley, D., & Kleinberg, J. (2010). <a href="https://www.cs.cornell.edu/home/kleinber/networks-book/">Networks, crowds, and markets</a>. Cambridge University Press.<p>
+</li>
+<li><p>McPherson, M., Smith-Lovin, L., & Cook, J. M. (2001). <a href="http://www.annualreviews.org/doi/abs/10.1146/annurev.soc.27.1.415">Birds of a feather: Homophily in social networks.</a> <i>Annual review of sociology</i>, 27(1), 415-444.</p>
+</li>
+<li><p>Christakis, N. A., & Fowler, J. H. (2007). <a href="http://www.nejm.org/doi/full/10.1056/NEJMsa066082#t=article">The spread of obesity in a large social network over 32 years</a>. <i>New England Journal of Medicine</i>, 357, 370-379.</p>
+</li>
+</ul>
+
+<h4>Code</h4>
+<ul>
+<li><p><a href="">Social network analysis</a></p>
+</li>
+<li><p><a href="">Network visualization</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+
+
+<div class="panel-group">
+<div class="panel panel-default">
+<div class="panel-heading">
+<h2 id="week-8" class="panel-title">
+<a data-toggle="collapse" href="#collapse8">Week 8: 11/1. Machine Learning for Social Science</a>
+</h2>
+</div>
+<div id="collapse8" class="panel-collapse collapse in" style="margin:12px">
+
+<p><b>Topics:</b> Predictive versus explanatory analysis. Evaluation: Holdout/Cross Validation. Supervised and unsupervised machine learning. Regularization. </p>
+
+<h4>Background material</h4>
+<ul>
+<li><p>Mullainathan, S. & Spiess, J. (2017). <a href="https://www.aeaweb.org/articles?id=10.1257/jep.31.2.87">Machine Learning: An Applied Econometric Approach</a>. <i>Journal of Economic Perspectives</i>, 31(2), 87-106.</p>
+</li>
+<li><p>Grimmer, J. (2015). <a href="https://www.cambridge.org/core/services/aop-cambridge-core/content/view/S1049096514001784">We are all social scientists now: how big data, machine learning, and causal inference work together</a>. <i>PS: Political Science & Politics</i>, 48(1), 80-83.</p>
+</li>
+</ul>
+
+
+<h4>Code</h4>
+<ul>
+<li><p><a href="">Supervised Machine Learning</a></p>
+</li>
+<li><p><a href="">Unsupervised Machine Learning</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+
+
+<div class="panel-group">
+<div class="panel panel-default">
+<div class="panel-heading">
+<h2 id="week-9" class="panel-title">
+<a data-toggle="collapse" href="#collapse9">Week 9: 11/08. Intro to Text</a>
+</h2>
+</div>
+<div id="collapse9" class="panel-collapse collapse in" style="margin:12px">
+
+<p><b>Topics:</b> Regular expressions. Work frequencies, TF-IDF and Zipf's Law. tidytext and quanteda</p>
+
+<h4>Background material</h4>
+<ul>
+<li><p>Grimmer, J., & Stewart, B. M. (2013). <a href="https://www.cambridge.org/core/journals/political-analysis/article/div-classtitletext-as-data-the-promise-and-pitfalls-of-automatic-content-analysis-methods-for-political-textsdiv/F7AAC8B2909441603FEB25C156448F20">Text as data: The promise and pitfalls of automatic content analysis methods for political texts</a>. <i>Political analysis</i>, 21(3), 267-297.<p>
+</li>
+<li><p>Benoit, K. et al. (2017) <a href="http://quanteda.io/articles/quickstart.html">Getting Started with quanteda</a>.</p>
+</li>
+<li><p>Benoit, K. et al. (2017) <a href="http://quanteda.io/articles/quickstart.html">Getting Started with quanteda</a>.</p>
+</li>
+</ul>
+
+<h4>Optional Readings</h4>
+<ul>
+<li><p>Young, L., & Soroka, S. (2012). <a href="http://www.tandfonline.com/doi/abs/10.1080/10584609.2012.671234">Affective news: The automated coding of sentiment in political texts</a>. <i>Political Communication</i>, 29(2), 205-231.</p>
+</li>
+<li><p>Tausczik, Y. R., & Pennebaker, J. W. (2010). <a href="http://journals.sagepub.com/doi/abs/10.1177/0261927X09351676">The psychological meaning of words: LIWC and computerized text analysis methods</a>. <i>Journal of language and social psychology</i>, 29(1), 24-54.</p></li>
+</ul>
+
+<h4>Code</h4>
+<ul>
+<li><p><a href="">Basics in text using `tidytext`</a></p>
+</li>
+<li><p><a href="">quanteda</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+
+
+
+<div class="panel-group">
+<div class="panel panel-default">
+<div class="panel-heading">
+<h2 id="week-10" class="panel-title">
+<a data-toggle="collapse" href="#collapse10">Week 10: 11/15. Text-as-Data</a>
+</h2>
+</div>
+<div id="collapse10" class="panel-collapse collapse in" style="margin:12px">
+
+<p><b>Topics:</b> Text as Data. Supervised (Text Classification) and Unsupervised Models (Topic Models, Word Scaling and Word Embedding)</p>
+
+<h4>Background Material</h4>
+<ul>
+<li><p>Blei, D. M. (2012). <a href="http://dl.acm.org/citation.cfm?id=2133826">Probabilistic topic models.</a> <i>Communications of the ACM</i>, 55(4), 77-84.</p>
+</li>
+</ul>
+
+<h4>Optional Readings</h4>
+<ul>
+<li><p>Roberts, M. E., Stewart, B. M., Tingley, D., Lucas, C., Leder‐Luis, J., Gadarian, S. K., ... & Rand, D. G. (2014). <a href="http://authors.library.caltech.edu/52278/7/topicmodelsopenendedexperiments.pdf">Structural Topic Models for Open‐Ended Survey Responses.</a> <i>American Journal of Political Science</i>, 58(4), 1064-1082.</p>
+</li>
+<li><p>Lowe, W. (2008). <a href="http://www.jstor.org/stable/25791945">Understanding wordscores</a>. <i>Political Analysis</i>, 16(4), 356-371.</p>
+</li>
+<li><p>Gentzkow, M., Kelly, B. T., & Taddy, M. (2017).<a href="https://ssrn.com/abstract=2934001">Text as Data</a> Working paper.</p>
+</li>
+<li><p>Mikolov, T., Chen, K., Corrado, G., & Dean, J. (2013). <a href="https://arxiv.org/pdf/1301.3781.pdf">Efficient estimation of word representations in vector space.</a> arXiv preprint arXiv:1301.3781.</p>
+</li>
+<li><p>Denny, M. J., & Spirling, A. (2017). <a href="http://www.nyu.edu/projects/spirling/documents/preprocessing.pdf">Text preprocessing for unsupervised learning: why it matters, when it misleads, and what to do about it.</a> Working paper, New York University.</p>
+</li>
+</ul>
+
+<h4>Code</h4>
+<ul>
+<li><p><a href="">Topic models</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>

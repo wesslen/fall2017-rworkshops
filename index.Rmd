@@ -1,0 +1,146 @@
+---
+output:
+  html_document:
+    toc: true
+    toc_depth: 3
+---
+
+<div class="container">
+<div class="jumbotron" style="margin-left:-15px">
+<h1 class="title">R Workshop Series</h1>
+<h2 class="subtitle">A Computational Social Scientist Toolkit</h2>
+<p>Project Mosaic, University of North Carolina at Charlotte, Fall 2017</p>
+</div>
+</div>
+
+R has become an important tool for statisticians, data scientists and (now) computational social scientists. 
+
+In this ten part series, I'll cover critical R skills for social scientists including data acquisition, visualizations, machine learning, social network and text analysis.
+
+Each workshop is open to UNCC graduate students, staff and faculty. To register, please sign up for each workshop at [this link](https://projectmosaic.uncc.edu/events-list/).
+
+Participants new to R should attend the first three workshops that cover essential skills in R.
+
+Participants should bring their own laptops (if they want to run the code) with R/R Studio installed. See instructions below for details on how to get R/R Studio on your laptop.
+
+# Instructor
+
+<table class = "table table-striped">
+<tr>
+<td><a href="http://wesslen.github.io"><strong>Ryan Wesslen</strong></a></td>
+<td><a href="mailto:rwesslen@uncc.edu">rwesslen@uncc.edu</a></td>
+<td><a href="https://www.twitter.com/ryanwesslen">@ryanwesslen</a></td>
+</tr>
+</table>
+
+
+# Schedule
+
+<table class = "table table-striped table-hover">
+<tr>
+<td><b>Workshop Meetings</b></td>
+<td>Tuesdays</td>
+<td> 2:00&ndash;4:00 pm </td>
+<td><a href="">TBD</a></td>
+</tr>
+<tr>
+<td><b>Consulting Hours</b></td>
+<td>Wednesdays</td>
+<td>1:00 pm&ndash;4:00 pm</td>
+<td><a href="">Hickory Hall</a></td>
+</tr>
+<tr>
+<td></td>
+<td>Thursdays</td>
+<td>9:00 am &ndash;12:00 pm</td>
+<td><a href="">Hickory Hall</a></td>
+</tr>
+</table>
+
+Consulting hours will be walk-in for now (although, please email me to reserve times). 
+
+We're working on redesigning the Project Mosaic consultation reservation website 
+
+# Series structure
+
+Each session will be divided into three blocks: an introduction to R (R Essentials), intermediate R skills and computational social science tools. 
+
+Each workshop is standalone -- so participants aren't required to come to all although each workshop will build off the skills from previous workshops.
+
+# Prerequisites
+
+The first three sessions assumes no knowledge of R or programming skills. 
+
+Later sessions will assume knowledge of probability and linear regression
+
+# Software 
+
+This course will use [R](https://www.r-project.org/), which is a free and open-source programming language primarily used for statistics and data analysis. 
+
+We will also use [RStudio](https://www.rstudio.com/), which is an easy-to-use interface to R. 
+
+**Easiest Approach: Install Locally**
+
+Simply go to both links and download the latest versions of R and R Studio locally. 
+
+**Alternative: Docker**
+
+Alternatively, you can use [Docker](https://www.docker.com/) either locally ([Mac](https://www.docker.com/docker-mac) or [Windows](https://www.docker.com/docker-windows)) or using a temporary instance at [play-with-docker.com](http://labs.play-with-docker.com/).
+
+* Once you have docker installed, run "docker run -d -p 8787:8787 rocker/tidyverse". After the image download is complete, go to [http://localhost#8787](http://localhost#8787) link to open the browser. 
+
+* If you're using "play-with-docker", you can open the browser by clicking the "8787" button that will appear near your IP. After clicking the link, go back to your terminal and copy your token (see the terminal) and press ok.
+
+* In your browser session, use the username/pwd rstudio/rstudio to open R Studio. 
+
+For Python users more use to Jupyter notebooks, see this [Docker Hub repository](https://hub.docker.com/r/jupyter/datascience-notebook/). There are other alternatives so don't feel obligated to use this Docker Hub. 
+
+# License and credit
+
+Science should be open, and this course builds up other open licensed material, so unless otherwise noted, all materials for this class are licensed under a <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
+
+The design and a lot of content of this course is based on materials by [Pablo Barberá](http://pablobarbera.com/).
+
+For advanced users, I strongly recommend his [Fall 2017 USC Measurement Models and Statistical Computing Course](https://github.com/pablobarbera/POIR613) or Benjamin Soltoff's [U of Chicago Computing for the Social Sciences Course](http://cfss.uchicago.edu/index.html). 
+
+His materials referenced work from:
+
+* [Dan Cervone](http://dcervone.com/)
+
+* [Alex Hanna](http://alex-hanna.com)
+
+* [Ken Benoit](http://www.kenbenoit.net/)
+
+* [Paul Nulty](https://github.com/pnulty)
+
+* [Kevin Munger](https://github.com/kmunger)
+
+* [Arthur Spirling](http://www.nyu.edu/projects/spirling/)
+
+* [Justin Grimmer](http://www.justingrimmer.org/)
+
+* [Karsten Donnay](http://www.karstendonnay.net/)
+
+My materials referenced work from:
+
+* [Brooke Anderson](https://github.com/geanders/)
+
+* [Matthew Denny](http://www.mjdenny.com/)
+
+* [Mike Kearney](https://github.com/mkearney)
+
+* [Tyler Rinker](https://github.com/trinker)
+
+* [Katya Ognyanova](http://kateto.net/)
+
+* [Benjamin Soltoff](http://cfss.uchicago.edu/index.html)
+
+The layout for this website was designed by [Jeffrey Arnold](http://www.jrnold.me/).
+
+The source for the materials of this course is on GitHub at <a href="https://github.com/wesslen/fall2017-rworkshops">wesslen/fall2017-rworkshops</a>
+
+# Feedback
+
+If you have any feedback on the course or find any typos or errors in this website go to [issues](https://github.com/wesslen/fall2017-rworkshops/issues), click on the "New Issue" button to create a new issue, and add your suggestion or describe the problem.
+
+
