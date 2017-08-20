@@ -32,10 +32,8 @@ navbar:
         href: "schedule.html#week-10"
     - text: "Resources"
       menu:
-      - text: "Books"
-        href: "resources/books.html"
-      - text: "Online Tutorials"
-        href: "resources/onlinetutorials.html"
+      - text: "R Help!"
+        href: "docs/help.html"
   right:
     - icon: fa-github fa-lg
       href: https://github.com/wesslen

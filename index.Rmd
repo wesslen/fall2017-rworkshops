@@ -21,7 +21,7 @@ Each workshop is open to UNCC graduate students, staff and faculty. To register,
 
 Participants new to R should attend the first three workshops that cover essential skills in R.
 
-Participants should bring their own laptops (if they want to run the code) with R/R Studio installed. See instructions below for details on how to get R/R Studio on your laptop.
+Participants should bring their own laptops (if you want to run the code) with R/R Studio installed. See instructions below for details on how to get R/R Studio on your laptop.
 
 # Instructor
 

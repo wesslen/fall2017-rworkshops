@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+
+
+
+
+<title>Help me help you</title>
+
+<script src="site_libs/jquery/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap/css/cosmo.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap/shim/respond.min.js"></script>
+<script src="site_libs/jqueryui/jquery-ui.min.js"></script>
+<link href="site_libs/tocify/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify/jquery.tocify.js"></script>
+<script src="site_libs/navigation/tabsets.js"></script>
+<link href="site_libs/highlightjs/textmate.css" rel="stylesheet" />
+<script src="site_libs/highlightjs/highlight.js"></script>
+<link href="site_libs/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs && document.readyState && document.readyState === "complete") {
+   window.setTimeout(function() {
+      hljs.initHighlighting();
+   }, 0);
+}
+</script>
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+<link rel="stylesheet" href="styles.css" type="text/css" />
+
+</head>
+
+<body>
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+  height: auto;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 51px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+
+.section h2 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h3 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h4 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h5 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h6 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+
+<div class="container-fluid main-container">
+
+<!-- tabsets -->
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+</script>
+
+<!-- code folding -->
+
+
+
+
+<script>
+$(document).ready(function ()  {
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
+
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+  padding-left: 25px;
+  text-indent: 0;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row-fluid">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">R Workshops</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="index.html">Overview</a>
+</li>
+<li>
+  <a href="schedule.html">Schedule</a>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    Code
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="schedule.html#week-1">Intro to R (1)</a>
+    </li>
+    <li>
+      <a href="schedule.html#week-2">Data Management (2)</a>
+    </li>
+    <li>
+      <a href="schedule.html#week-3">Tidyverse (3)</a>
+    </li>
+    <li>
+      <a href="schedule.html#week-4">RMarkdown &amp; Git (4)</a>
+    </li>
+    <li>
+      <a href="schedule.html#week-5">Visualizations (5)</a>
+    </li>
+    <li>
+      <a href="schedule.html#week-6">Data Acquisition (APIs) (6)</a>
+    </li>
+    <li>
+      <a href="schedule.html#week-7">Social Network (7)</a>
+    </li>
+    <li>
+      <a href="schedule.html#week-8">Machine Learning (8)</a>
+    </li>
+    <li>
+      <a href="schedule.html#week-9">Intro to Text (9)</a>
+    </li>
+    <li>
+      <a href="schedule.html#week-10">Text as Data (10)</a>
+    </li>
+  </ul>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    Resources
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="docs/help.html">R Help!</a>
+    </li>
+  </ul>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+  <a href="https://github.com/wesslen">
+    <span class="fa fa-github fa-lg"></span>
+     
+  </a>
+</li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">Help me help you</h1>
+
+</div>
+
+
+<p>*This help page was created by <a href="http://www.jrnold.me/">Jeffrey Arnold</a>.</p>
+<p>It was better than anything I could ever make and he deserves all of the credit for this phenomenal resource.*</p>
+<p>A good place to start is <a href="https://support.rstudio.com/hc/en-us/articles/200552336-Getting-Help-with-R">Rstudio’s guide for getting help with R</a></p>
+<div id="asking-for-help" class="section level1">
+<h1>Asking for help</h1>
+<p>When asking for help with R it is important to at least</p>
+<ol style="list-style-type: decimal">
+<li>Include the exact code that you ran</li>
+<li>The error message that you got</li>
+</ol>
+<p>Without the code and the error message it can be hard to impossible to diagnose the problem and provide a solution. Questions such as “This isn’t working” or even “I’m getting this error message” aren’t useful without the code and error message.</p>
+<p>Even better is to provide a <strong>minimal reproducible answer</strong>. This is the smallest amount of code that <strong>someone else can run</strong>, that produces the same error that you are getting. This often means trying to reproduce your error running the same code on a different built-in data set and seeing if you still get the same error. See more instructions <a href="http://stackoverflow.com/questions/5963269/how-to-make-a-great-r-reproducible-example">here</a>. A benefit of this approach, is that often by trying to reproduce with minimal code you will be able to debug the code itself.</p>
+<p>Finally, include the results of <code>sessionInfo()</code>. This provides information about the exact versions of R, loaded packages, and operating system you are using, which can be useful in debugging problems.</p>
+<pre class="r"><code>sessionInfo()</code></pre>
+<pre><code>## R version 3.3.2 (2016-10-31)
+## Platform: x86_64-pc-linux-gnu (64-bit)
+## Running under: Ubuntu 16.04.2 LTS
+## 
+## locale:
+##  [1] LC_CTYPE=en_US.UTF-8       LC_NUMERIC=C              
+##  [3] LC_TIME=en_US.UTF-8        LC_COLLATE=en_US.UTF-8    
+##  [5] LC_MONETARY=en_US.UTF-8    LC_MESSAGES=en_US.UTF-8   
+##  [7] LC_PAPER=en_US.UTF-8       LC_NAME=C                 
+##  [9] LC_ADDRESS=C               LC_TELEPHONE=C            
+## [11] LC_MEASUREMENT=en_US.UTF-8 LC_IDENTIFICATION=C       
+## 
+## attached base packages:
+## [1] stats     graphics  grDevices utils     datasets  methods   base     
+## 
+## other attached packages:
+## [1] DT_0.2        leaflet_1.1.0 xaringan_0.4 
+## 
+## loaded via a namespace (and not attached):
+##  [1] Rcpp_0.12.12.1   highr_0.6        bindr_0.1        base64enc_0.1-3 
+##  [5] tools_3.3.2      digest_0.6.12    jsonlite_1.5     evaluate_0.10.1 
+##  [9] tibble_1.3.3     pkgconfig_2.0.1  rlang_0.1.1      shiny_1.0.3     
+## [13] DBI_0.7          rstudioapi_0.6   crosstalk_1.0.0  yaml_2.1.14     
+## [17] bindrcpp_0.2     stringr_1.2.0    dplyr_0.7.2      httr_1.2.1      
+## [21] knitr_1.17       htmlwidgets_0.9  rprojroot_1.1    glue_1.1.0      
+## [25] R6_2.2.2         rmarkdown_1.6    magrittr_1.5     servr_0.7       
+## [29] backports_1.0.4  htmltools_0.3.6  rsconnect_0.7    assertthat_0.2.0
+## [33] mime_0.5         xtable_1.8-2     httpuv_1.3.5     stringi_1.1.5</code></pre>
+<p>For further discussion on how to ask good questions:</p>
+<ul>
+<li><a href="http://blog.revolutionanalytics.com/2014/01/how-to-ask-for-r-help.html">How to ask for help in R</a></li>
+<li>StackOverflow. <a href="https://stackoverflow.com/questions/5963269/how-to-make-a-great-r-reproducible-example">How to make a great R reproducible example?</a></li>
+<li>StackOverflow. <a href="http://stackoverflow.com/help/mcve">How to create a Minimal, Complete, and Verifiable example</a></li>
+<li><a href="https://www.r-project.org/posting-guide.html">R Posting Guide: How to ask good questions that prompt useful answers</a></li>
+<li>Coding Killed the Cat. <a href="https://codingkilledthecat.wordpress.com/2012/06/26/how-to-ask-for-programming-help/">How to ask for programming question</a></li>
+<li>Matt Gemmell. <a href="http://mattgemmell.com/what-have-you-tried/">What Have You Tried?</a></li>
+</ul>
+</div>
+<div id="within-r-and-rstudio" class="section level1">
+<h1>Within R and RStudio</h1>
+<p><strong>Help tab:</strong> The first place to look is to use the search box in the <em>Help</em> tab of RStudio.</p>
+<p><strong>Autocompletion:</strong> If you start typing in either the console or editor in RStudio and hit <code>[TAB]</code>, the RStudio will show a list of completions as well as a short help for each.</p>
+<p>There are several R functions to get help. You can use either <code>?</code> or <code>help</code>. For example to find help for a function <code>quantile</code>, both</p>
+<pre class="r"><code>?quantile</code></pre>
+<p>and</p>
+<pre class="r"><code>help(&quot;quantile&quot;)</code></pre>
+<p>will display the help page for <code>quantile</code>. To view this documentation online in a searchable form visit <a href="http://www.rdocumentation.org/">Rdocumentation.org</a>.</p>
+<p>To find the help pages available for a package, use <code>help</code> with the <code>package</code> argument. For example,</p>
+<pre class="r"><code>help(package = &quot;tidyr&quot;)</code></pre>
+<p>The help for R functions is only useful if you know what function you need want to know either what it is doing, or what the arguments are. The help files in R are not useful for understanding what a package does or how to use it. However, <em>vignettes</em> for R packages are often overviews of the functionality of packages that serve as tutorials or introductions to using the package. To get a list of all vignettes of the packages your have installed, run</p>
+<pre class="r"><code>browseVignettes()</code></pre>
+<p>To get the list of vignettes for a specific package, run</p>
+<pre class="r"><code>browseVignettes(&quot;dplyr&quot;)</code></pre>
+<p>You can also find vignettes for packages you have not installed on the packages’ CRAN page <a href="https://github.com/hadley/dplyr">https://cran.r-project.org/web/packages/tidyr/index.html</a>. There is also a <code>vignette</code> function, but you need the exact name of the vignette, which you generally do not know.</p>
+<p>You can search for foo in help manuals and archived mailing lists</p>
+<pre class="r"><code>RSiteSearch(&quot;ggplot2&quot;)</code></pre>
+<p>Want to find out what data sets are included in the R packages that you have installed?</p>
+<pre class="r"><code>data()</code></pre>
+<p>To find data sets included in a specific package, use <code>data</code> with the <code>package</code> argument, For example,</p>
+<pre class="r"><code>data(package = &quot;ggplot2&quot;)</code></pre>
+<p>Note that <code>search()</code> <strong>does not</strong> do what you expect it to do (unless you expect it to return the <a href="http://adv-r.had.co.nz/Environments.html">search path</a> in which R looks for names of functions and objects).</p>
+</div>
+<div id="internet" class="section level1">
+<h1>Internet</h1>
+<p><a href="http://www.rdocumentation.org/">Rdocumentation.org</a> searches the documentation of all R packages on CRAN.</p>
+<p>There are several documentation sites that are of particular use:</p>
+<ul>
+<li><a href="http://tidyverse.org/">tidyverse.org</a> hosts documentation for the various <strong>tidyverse</strong> packages (ggplot2, tibble, tidyr, reader, purr, dplyr, …).</li>
+<li><a href="http://docs.ggplot2.org/">ggplot2 documentation</a>. Documentation for <strong>ggplot2</strong>.</li>
+<li><a href="https://www.ggplot2-exts.org/">ggplot2 extensions</a> A list of packages that extend the functionality of <strong>ggplot2</strong>.</li>
+</ul>
+<p>Google has gotten better with R searches, but <code>R</code> is a particularly unfriendly search term. However, if you are searching for “R” with other words in context, you are likely to have some success. An alternative is to use <a href="http://rseek.org">rseek.org</a> instead. It is a Google search restricted to a curated set of sites related to R.</p>
+<p>Many R packages have an article in either the <a href="http://www.jstatsoft.org/index">Journal of Statistical Software</a> or <a href="https://journal.r-project.org/">The R Journal</a> These articles are similar to package does.</p>
+<p><a href="https://stackoverflow.com">Stack Overflow</a> is a question and answer website for computer programming questions. Search for questions about R using the “r” tag. You can do this by adding <code>[r]</code> to your search query. Other tags that may be useful are <code>[ggplot2]</code>, <code>[plyr]</code>. However, generally you should not need to <em>ask</em> questions for this course. Someone has likely already asked your question before.</p>
+<p>If you have a question about “statistics” or “data analysis” rather than “R”, then <a href="https://stats.stackexchange.com/">Cross Validated</a> is a Q-and-A site like Stack Overflow, but for statistics and machine learning.</p>
+<p>The traditional source of R help was the <a href="https://stat.ethz.ch/mailman/listinfo/r-help">R-help mailing list</a>. It is still a useful resource, though much of the traffic has moved over to StackOverflow.</p>
+</div>
+<div id="cheatsheets" class="section level1">
+<h1>Cheatsheets</h1>
+<p>RStudio has several very good <a href="https://www.rstudio.com/resources/cheatsheets/">cheatsheets</a></p>
+<ul>
+<li><a href="https://www.rstudio.com/wp-content/uploads/2016/01/rstudio-IDE-cheatsheet.pdf">RStudio IDE</a></li>
+<li><a href="https://www.rstudio.com/wp-content/uploads/2016/11/ggplot2-cheatsheet-2.1.pdf">Data Visualization</a></li>
+<li><a href="https://github.com/rstudio/cheatsheets/raw/master/source/pdfs/data-transformation-cheatsheet.pdf">Data Transformation Cheat Sheet</a></li>
+<li><a href="https://www.rstudio.com/wp-content/uploads/2016/03/rmarkdown-cheatsheet-2.0.pdf">R Markdown</a></li>
+<li><a href="https://www.rstudio.com/wp-content/uploads/2015/03/rmarkdown-reference.pdf">R Markdown Reference Guide</a></li>
+<li><a href="https://github.com/rstudio/cheatsheets/raw/master/source/pdfs/data-import-cheatsheet.pdf">Data Import Cheat Sheet</a></li>
+<li><a href="https://www.rstudio.com/wp-content/uploads/2016/10/r-cheat-sheet-3.pdf">Base R</a></li>
+<li><a href="https://www.rstudio.com/wp-content/uploads/2016/02/advancedR.pdf">Advanced R</a></li>
+<li><a href="https://www.rstudio.com/wp-content/uploads/2016/09/RegExCheatsheet.pdf">Regular Expressions</a></li>
+</ul>
+<p>The <a href="https://cran.r-project.org/doc/contrib/Short-refcard.pdf">Short R Reference Card</a> is the classic cheatsheet. However, some of the data manipulation and plotting functions are not those we use in this course, but it does cover much of the statistical functions.</p>
+</div>
+<div id="books" class="section level1">
+<h1>Books</h1>
+<p>Two references organized by task are <a href="http://www.cookbook-r.com">The Cookbook for R</a> and <a href="http://www.statmethods.net/">Quick-R</a>.</p>
+</div>
+<div id="blogs-and-twitter" class="section level1">
+<h1>Blogs and Twitter</h1>
+<p><a href="http://www.r-bloggers.com/">R-bloggers</a> aggregates R-related blogging.</p>
+<p>On twitter, the R hashtag is <code>#rstats</code>. Some prominent R-related people and accounts on twitter are:</p>
+<ul>
+<li><span class="citation">[@RLangTip]</span>(<a href="https://twitter.com/RLangTip" class="uri">https://twitter.com/RLangTip</a>). One R Tip a Day</li>
+<li><span class="citation">[@R-bloggers]</span>(<a href="https://twitter.com/Rbloggers" class="uri">https://twitter.com/Rbloggers</a>)</li>
+<li><span class="citation">[@RevolutionR]</span>(<a href="https://twitter.com/RevolutionR" class="uri">https://twitter.com/RevolutionR</a>)</li>
+<li><span class="citation">[@isDotR]</span>(<a href="https://twitter.com/isDotR" class="uri">https://twitter.com/isDotR</a>)</li>
+<li><span class="citation">[@swirlstats]</span>(<a href="https://twitter.com/swirlstats" class="uri">https://twitter.com/swirlstats</a>)</li>
+<li><span class="citation">[@rOpenGov]</span>(<a href="https://twitter.com/rOpenGov" class="uri">https://twitter.com/rOpenGov</a>)</li>
+<li><span class="citation">[@JennyBryan]</span>(<a href="https://twitter.com/JennyBryan" class="uri">https://twitter.com/JennyBryan</a>)</li>
+<li><span class="citation">[@rOpenSci]</span>(<a href="https://twitter.com/rOpenSci" class="uri">https://twitter.com/rOpenSci</a>)</li>
+<li><span class="citation">[@rstudio]</span>(<a href="https://twitter.com/rstudio" class="uri">https://twitter.com/rstudio</a>)</li>
+<li><span class="citation">[@inside_R]</span>(<a href="https://twitter.com/inside_R" class="uri">https://twitter.com/inside_R</a>)</li>
+<li><span class="citation">[@cboettig]</span>(<a href="https://twitter.com/cboettig" class="uri">https://twitter.com/cboettig</a>)</li>
+<li><span class="citation">[@ramnath_vaidya]</span>(<a href="https://twitter.com/ramnath_vaidya" class="uri">https://twitter.com/ramnath_vaidya</a>)</li>
+<li><span class="citation">[@eddelbuettel]</span>(<a href="https://twitter.com/eddelbuettel" class="uri">https://twitter.com/eddelbuettel</a>)</li>
+<li><span class="citation">[@benmarwick]</span>(<a href="https://twitter.com/benmarwick" class="uri">https://twitter.com/benmarwick</a>)</li>
+<li><span class="citation">[@thosjleeper]</span>(<a href="https://twitter.com/thosjleeper" class="uri">https://twitter.com/thosjleeper</a>)</li>
+<li><span class="citation">[@STAT545]</span>(<a href="https://twitter.com/STAT545" class="uri">https://twitter.com/STAT545</a>)</li>
+</ul>
+</div>
+<div id="task-views" class="section level1">
+<h1>Task Views</h1>
+<p>Do you want to know what packages exist for a given topic? <a href="https://cran.r-project.org/web/views/">CRAN Task Views</a> provide subject matter groupings of R packages. Some potentially useful task-views to social scientists are:</p>
+<pre><code>- [Econometrics](https://cran.r-project.org/web/views/Econometrics.html)
+- [Natural Language Processing](https://cran.r-project.org/web/views/NaturalLanguageProcessing.html)
+- [Official Statistics &amp; Survey Methodology](https://cran.r-project.org/web/views/OfficialStatistics.html)
+- [Reproducible Research](https://cran.r-project.org/web/views/ReproducibleResearch.html)
+- [Spatial](https://cran.r-project.org/web/views/Spatial.html)
+- [Survival Analysis](https://cran.r-project.org/web/views/Survival.html)
+- [Time Series](https://cran.r-project.org/web/views/TimeSeries.html)
+- [Web Technologies and Services](https://cran.r-project.org/web/views/WebTechnologies.html)
+- [Social Sciences](https://cran.r-project.org/web/views/SocialSciences.html)</code></pre>
+</div>
+
+<footer class="footer" id="copyright">
+  <div class="container">
+      <p class="text-muted">
+          © Jeffrey Arnold, 2016, <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
+      </p>
+  </div>
+</footer>
+
+
+</div>
+</div>
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

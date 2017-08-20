@@ -1,0 +1,184 @@
+---
+title: Help me help you
+---
+
+*This help page was created by [Jeffrey Arnold](http://www.jrnold.me/). 
+
+It was better than anything I could ever make and he deserves all of the credit for this phenomenal resource.*
+
+A good place to start is [Rstudio's guide for getting help with R]( https://support.rstudio.com/hc/en-us/articles/200552336-Getting-Help-with-R)
+
+# Asking for help
+
+When asking for help with R it is important to at least
+
+1. Include the exact code that you ran
+2. The error message that you got
+
+Without the code and the error message it can be hard to impossible to diagnose the problem and provide a solution.
+Questions such as "This isn't working" or even "I'm getting this error message" aren't useful without the code and error message.
+
+Even better is to provide a **minimal reproducible answer**.
+This is the smallest amount of code that **someone else can run**, that produces the same error that you are getting.
+This often means trying to reproduce your error running the same code on a different built-in data set and seeing if you still get the same error.
+See more instructions [here](http://stackoverflow.com/questions/5963269/how-to-make-a-great-r-reproducible-example).
+A benefit of this approach, is that often by trying to reproduce with minimal code you will be able to debug the code itself.
+
+Finally, include the results of `sessionInfo()`.
+This provides information about the exact versions of R, loaded packages, and operating system you are using, which can be useful in debugging problems.
+```{r}
+sessionInfo()
+```
+
+For further discussion on how to ask good questions:
+
+- [How to ask for help in R](http://blog.revolutionanalytics.com/2014/01/how-to-ask-for-r-help.html)
+- StackOverflow. [How to make a great R reproducible example?](https://stackoverflow.com/questions/5963269/how-to-make-a-great-r-reproducible-example)
+- StackOverflow. [How to create a Minimal, Complete, and Verifiable example](http://stackoverflow.com/help/mcve)
+- [R Posting Guide: How to ask good questions that prompt useful answers](https://www.r-project.org/posting-guide.html)
+- Coding Killed the Cat. [How to ask for programming question](https://codingkilledthecat.wordpress.com/2012/06/26/how-to-ask-for-programming-help/)
+- Matt Gemmell. [What Have You Tried?](http://mattgemmell.com/what-have-you-tried/)
+
+# Within R and RStudio
+
+**Help tab:** The first place to look is to use the search box in the *Help* tab of RStudio.
+
+**Autocompletion:** If you start typing in either the console or editor in RStudio and hit `[TAB]`, the RStudio will show a list of completions as well as a short help for each.
+
+There are several R functions to get help.
+You can use either `?` or `help`.
+For example to find help for a function `quantile`, both
+``` r
+?quantile
+```
+and
+``` r
+help("quantile")
+```
+will display the help page for `quantile`.
+To view this documentation online in a searchable form visit [Rdocumentation.org](http://www.rdocumentation.org/).
+
+To find the help pages available for a package, use `help` with the `package` argument.
+For example,
+``` r
+help(package = "tidyr")
+```
+
+The help for R functions is only useful if you know what function you need want to know either what it is doing, or what the arguments are.
+The help files in R are not useful for understanding what a package does or how to use it.
+However, *vignettes* for R packages are often overviews of the functionality of packages that serve as tutorials or introductions to using the package.
+To get a list of all vignettes of the packages your have installed, run
+```r
+browseVignettes()
+```
+To get the list of vignettes for a specific package, run
+```r
+browseVignettes("dplyr")
+```
+You can also find vignettes for packages you have not installed on the packages' CRAN page [https://cran.r-project.org/web/packages/tidyr/index.html](https://github.com/hadley/dplyr).
+There is also a `vignette` function, but you need the exact name of the vignette, which you generally do not know.
+
+You can search for foo in help manuals and archived mailing lists
+```r
+RSiteSearch("ggplot2")
+```
+
+Want to find out what data sets are included in the R packages that you have installed?
+```r
+data()
+```
+To find data sets included in a specific package, use `data` with the `package` argument,
+For example,
+```r
+data(package = "ggplot2")
+```
+
+Note that `search()` **does not** do what you expect it to do (unless you expect it to return the [search path](http://adv-r.had.co.nz/Environments.html) in which R looks for names of functions and objects).
+
+
+# Internet
+
+[Rdocumentation.org](http://www.rdocumentation.org/) searches the documentation of all R packages on CRAN.
+
+There are several documentation sites that are of particular use:
+
+- [tidyverse.org](http://tidyverse.org/) hosts documentation for the various **tidyverse** packages (ggplot2, tibble, tidyr, reader, purr, dplyr, ...).
+- [ggplot2 documentation](http://docs.ggplot2.org/). Documentation for **ggplot2**.
+- [ggplot2 extensions](https://www.ggplot2-exts.org/) A list of packages that extend the functionality of **ggplot2**.
+
+Google has gotten better with R searches, but `R` is a particularly unfriendly search term.
+However, if you are searching for "R" with other words in context, you are likely to have some success.
+An alternative is to use [rseek.org](http://rseek.org) instead.
+It is a Google search restricted to a curated set of sites related to R.
+
+Many R packages have an article in either the [Journal of Statistical Software](http://www.jstatsoft.org/index) or [The R Journal](https://journal.r-project.org/)
+These articles are similar to package does.
+
+[Stack Overflow](https://stackoverflow.com) is a question and answer website for computer programming questions.
+Search for questions about R using the "r" tag. You can do this by adding `[r]` to your search query. Other tags that may be useful are `[ggplot2]`, `[plyr]`.
+However, generally you should not  need to *ask* questions for this course.
+Someone has likely already asked your question before.
+
+If you have a question about "statistics" or "data analysis" rather than "R", then [Cross Validated](https://stats.stackexchange.com/) is a Q-and-A site like Stack Overflow, but for statistics and machine learning.
+
+The traditional source of R help was the [R-help mailing list](https://stat.ethz.ch/mailman/listinfo/r-help).
+It is still a useful resource, though much of the traffic has moved over to StackOverflow.
+
+# Cheatsheets
+
+RStudio has several very good [cheatsheets](https://www.rstudio.com/resources/cheatsheets/)
+
+- [RStudio IDE](https://www.rstudio.com/wp-content/uploads/2016/01/rstudio-IDE-cheatsheet.pdf)
+- [Data Visualization](https://www.rstudio.com/wp-content/uploads/2016/11/ggplot2-cheatsheet-2.1.pdf)
+- [Data Transformation Cheat Sheet](https://github.com/rstudio/cheatsheets/raw/master/source/pdfs/data-transformation-cheatsheet.pdf)
+- [R Markdown](https://www.rstudio.com/wp-content/uploads/2016/03/rmarkdown-cheatsheet-2.0.pdf)
+- [R Markdown Reference Guide](https://www.rstudio.com/wp-content/uploads/2015/03/rmarkdown-reference.pdf)
+- [Data Import Cheat Sheet](https://github.com/rstudio/cheatsheets/raw/master/source/pdfs/data-import-cheatsheet.pdf)
+- [Base R](https://www.rstudio.com/wp-content/uploads/2016/10/r-cheat-sheet-3.pdf)
+- [Advanced R](https://www.rstudio.com/wp-content/uploads/2016/02/advancedR.pdf)
+- [Regular Expressions](https://www.rstudio.com/wp-content/uploads/2016/09/RegExCheatsheet.pdf)
+
+The [Short R Reference Card](https://cran.r-project.org/doc/contrib/Short-refcard.pdf) is the classic cheatsheet.
+However, some of the data manipulation and plotting functions are not those we use in this course, but it does cover much of the statistical functions.
+
+# Books
+
+Two references organized by task are [The Cookbook for R](http://www.cookbook-r.com) and [Quick-R](http://www.statmethods.net/).
+
+# Blogs and Twitter
+
+[R-bloggers](http://www.r-bloggers.com/) aggregates R-related blogging.
+
+
+On twitter, the R hashtag is `#rstats`. Some prominent R-related people and accounts on twitter are:
+
+- [@RLangTip](https://twitter.com/RLangTip). One R Tip a Day
+- [@R-bloggers](https://twitter.com/Rbloggers)
+- [@RevolutionR](https://twitter.com/RevolutionR)
+- [@isDotR](https://twitter.com/isDotR)
+- [@swirlstats](https://twitter.com/swirlstats)
+- [@rOpenGov](https://twitter.com/rOpenGov)
+- [@JennyBryan](https://twitter.com/JennyBryan)
+- [@rOpenSci](https://twitter.com/rOpenSci)
+- [@rstudio](https://twitter.com/rstudio)
+- [@inside_R](https://twitter.com/inside_R)
+- [@cboettig](https://twitter.com/cboettig)
+- [@ramnath_vaidya](https://twitter.com/ramnath_vaidya)
+- [@eddelbuettel](https://twitter.com/eddelbuettel)
+- [@benmarwick](https://twitter.com/benmarwick)
+- [@thosjleeper](https://twitter.com/thosjleeper)
+- [@STAT545](https://twitter.com/STAT545)
+
+# Task Views
+
+Do you want to know what packages exist for a given topic? [CRAN Task Views](https://cran.r-project.org/web/views/) provide subject matter groupings of R packages. Some potentially useful task-views to social scientists are:
+
+	- [Econometrics](https://cran.r-project.org/web/views/Econometrics.html)
+	- [Natural Language Processing](https://cran.r-project.org/web/views/NaturalLanguageProcessing.html)
+	- [Official Statistics & Survey Methodology](https://cran.r-project.org/web/views/OfficialStatistics.html)
+	- [Reproducible Research](https://cran.r-project.org/web/views/ReproducibleResearch.html)
+	- [Spatial](https://cran.r-project.org/web/views/Spatial.html)
+	- [Survival Analysis](https://cran.r-project.org/web/views/Survival.html)
+	- [Time Series](https://cran.r-project.org/web/views/TimeSeries.html)
+	- [Web Technologies and Services](https://cran.r-project.org/web/views/WebTechnologies.html)
+    - [Social Sciences](https://cran.r-project.org/web/views/SocialSciences.html)

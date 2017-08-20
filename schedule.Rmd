@@ -40,7 +40,7 @@ title: Course outline and readings
 </div>
 <div id="collapse2" class="panel-collapse collapse in" style="margin:12px">
 
-<p><b>Topics:</b> Essentials to handling data in R. Importing data (csv, Stata, SAS). Data wrangling (reshape, reshape2). Aggregation and filtering (plyr, dplyr)</p>
+<p><b>Topics:</b>Importing data (csv, Stata, SAS). Data wrangling (reshape, reshape2). Aggregation and filtering (plyr, dplyr)</p>
 
 <h4>Workshop material</h4>
 <ul>
@@ -69,7 +69,7 @@ title: Course outline and readings
 </div>
 <div id="collapse3" class="panel-collapse collapse in" style="margin:12px">
 
-<p><b>Topics:</b> Overview of Tidyverse: tidyr, dplyr, ggplot2, readr, purrr</p>
+<p><b>Topics:</b>Overview of Tidyverse: tidyr, dplyr, ggplot2, readr, purrr</p>
 
 
 <h4>Background material</h4>
