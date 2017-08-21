@@ -77,6 +77,12 @@ title: Workshop series schedule
 </li>
 </ul>
 
+<h4>Optional Readings</h4>
+<ul>
+<li><p>Bryan, J. (2017). <a href="https://jennybc.github.io/purrr-tutorial/">purrr tutorial.</a> </p>
+</li>
+</ul>
+
 <h4>Code</h4>
 <ul>
 <li><p>Soltoff, B. (2017). <a href="http://cfss.uchicago.edu/datawrangle_dplyr.html">`dplyr` in brief</a>. <i>Computing for the Social Sciences</i></p>
@@ -331,7 +337,7 @@ title: Workshop series schedule
 </li>
 <li><p>Lowe, W. (2008). <a href="http://www.jstor.org/stable/25791945">Understanding wordscores</a>. <i>Political Analysis</i>, 16(4), 356-371.</p>
 </li>
-<li><p>Gentzkow, M., Kelly, B. T., & Taddy, M. (2017).<a href="https://ssrn.com/abstract=2934001">Text as Data</a> Working paper.</p>
+<li><p>Gentzkow, M., Kelly, B. T., & Taddy, M. (2017). <a href="https://ssrn.com/abstract=2934001">Text as Data</a> Working paper.</p>
 </li>
 <li><p>Mikolov, T., Chen, K., Corrado, G., & Dean, J. (2013). <a href="https://arxiv.org/pdf/1301.3781.pdf">Efficient estimation of word representations in vector space.</a> arXiv preprint arXiv:1301.3781.</p>
 </li>
