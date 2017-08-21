@@ -67,7 +67,7 @@ title: Workshop series schedule
 <p><b>Topics:</b> Overview of Tidyverse: tidyr, dplyr, ggplot2, readr, purrr</p>
 
 
-<h4>Background material</h4>
+<h4>Workshop material</h4>
 <ul>
 <li><p>R Studio (2017). <a href="https://www.tidyverse.org/">Tidyverse.</a> </p>
 </li>
@@ -105,7 +105,7 @@ title: Workshop series schedule
 
 <p><b>Topics:</b> R Markdown. Introduction to Git</p>
 
-<h4>Background material</h4>
+<h4>Workshop material</h4>
 <ul>
 <li><p>Anderson, B. (2017). <a href="https://github.com/geanders/RProgrammingForResearch/raw/master/slides/CourseNotes_Week5.pdf">Week 5 Slides: Reproducible Research.</a> <i>R Programming for Research Course</i>.</p>
 </li>
@@ -138,7 +138,7 @@ title: Workshop series schedule
 
 <p><b>Topics:</b> Introduction to visualizations. ggplot2. Interactive visualizations using HTMLWidgets.</p>
 
-<h4>Background material</h4>
+<h4>Workshop material</h4>
 <ul>
 <li><p>R Studio. (2017) <a href="http://www.htmlwidgets.org/">R Studio HTML Widgets</a>.</p>
 </li>
@@ -172,7 +172,7 @@ title: Workshop series schedule
 
 <p><b>Topics:</b> Define API's. Twitter's Public API (REST and Stream). Facebook API.</p>
 
-<h4>Background material</h4>
+<h4>Workshop material</h4>
 <ul>
 <li><p>Kearney, M. (2017). <a href="https://mkearney.github.io/rtweet/index.html"> rtweet </a>. GitHub repository.</p>
 </li>
@@ -215,7 +215,7 @@ title: Workshop series schedule
 
 <p><b>Topics:</b> Basic concepts in social network analysis. Centrality measures. Network visualization.</p>
 
-<h4>Materials</h4>
+<h4>Workshop material</h4>
 <ul>
 <li><p>Ognyanova, K. (2017). <a href="http://kateto.net/network-visualization">Network visualization with R</a>. <i> POLNET 2017 Workshop</i>, Columbus, OH.<p>
 </li>
@@ -284,11 +284,11 @@ title: Workshop series schedule
 
 <p><b>Topics:</b> Regular expressions. Work frequencies, TF-IDF and Zipf's Law. tidytext and quanteda</p>
 
-<h4>Background material</h4>
+<h4>Workshop material</h4>
 <ul>
-<li><p>Silge, J. & Robinson, D. (2017) <a href="https://cran.r-project.org/web/packages/tidytext/vignettes/tidytext.html">Introduction to tidytext</a>.</p>
+<li><p>Silge, J. & Robinson, D. (2017) <a href="https://cran.r-project.org/web/packages/tidytext/vignettes/tidytext.html">Introduction to `tidytext`</a>.</p>
 </li>
-<li><p>Benoit, K. et al. (2017) <a href="http://quanteda.io/articles/quickstart.html">Getting Started with quanteda</a>.</p>
+<li><p>Benoit, K. et al. (2017) <a href="http://quanteda.io/articles/quickstart.html">Getting Started with `quanteda`</a>.</p>
 </li>
 </ul>
 
@@ -323,7 +323,7 @@ title: Workshop series schedule
 
 <p><b>Topics:</b> Text as Data. Supervised (Text Classification) and Unsupervised Models (Topic Models, Word Scaling and Word Embedding)</p>
 
-<h4>Background Material</h4>
+<h4>Background material</h4>
 <ul>
 <li><p>Blei, D. M. (2012). <a href="http://dl.acm.org/citation.cfm?id=2133826">Probabilistic topic models.</a> <i>Communications of the ACM</i>, 55(4), 77-84.</p>
 </li>

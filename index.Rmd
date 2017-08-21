@@ -13,13 +13,13 @@ output:
 </div>
 </div>
 
-R has become an important tool for statisticians, data scientists and (now) computational social scientists. 
+R has become a vital tool for statisticians, data scientists and (now) computational social scientists. 
 
 In this ten part series, I'll cover critical R skills for social scientists including data acquisition, visualizations, machine learning, social network and text analysis.
 
 Each workshop is open to UNCC graduate students, staff and faculty. To register, please sign up for each workshop at [this link](https://projectmosaic.uncc.edu/events-list/).
 
-Participants new to R should attend the first three workshops that cover essential skills in R.
+Participants new to R should attend the first three workshops that cover essential R skills.
 
 Participants should bring their own laptops (if you want to run the code) with R/R Studio installed. See instructions below for details on how to get R/R Studio on your laptop.
 
@@ -52,7 +52,7 @@ Participants should bring their own laptops (if you want to run the code) with R
 <tr>
 <td></td>
 <td>Thursdays</td>
-<td>9:00 am &ndash;12:00 pm</td>
+<td>10:00 am &ndash;12:00 pm</td>
 <td><a href="">Hickory Hall</a></td>
 </tr>
 </table>
@@ -148,5 +148,3 @@ The source for the materials of this course is on GitHub at <a href="https://git
 # Feedback
 
 If you have any feedback on the course or find any typos or errors in this website go to [issues](https://github.com/wesslen/fall2017-rworkshops/issues), click on the "New Issue" button to create a new issue, and add your suggestion or describe the problem.
-
-
