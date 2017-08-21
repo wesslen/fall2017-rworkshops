@@ -10,7 +10,7 @@ title: Course outline and readings
 <a data-toggle="collapse" href="#collapse1">Week 1: 09/06. Introduction to R</a>
 </h2>
 </div>
-<div id="collapse1" class="panel-collapse collapse in" style="margin:12px">
+<div id="collapse1" class="panel-collapse collapse" style="margin:12px">
 <p><b>Topics:</b> Introduction to R and R Studio. Packages. Working Directory. Dataframes and functions.</p>
 
 <h4>Workshop material</h4>
@@ -33,7 +33,7 @@ title: Course outline and readings
 <a data-toggle="collapse" href="#collapse2">Week 2: 09/13. Data Management</a>
 </h2>
 </div>
-<div id="collapse2" class="panel-collapse collapse in" style="margin:12px">
+<div id="collapse2" class="panel-collapse collapse" style="margin:12px">
 
 <p><b>Topics:</b> Importing data (csv, Stata, SAS). Data wrangling (reshape, reshape2). Aggregation and filtering (dplyr).</p>
 
@@ -62,7 +62,7 @@ title: Course outline and readings
 <a data-toggle="collapse" href="#collapse3">Week 3: 09/20. Tidyverse</a>
 </h2>
 </div>
-<div id="collapse3" class="panel-collapse collapse in" style="margin:12px">
+<div id="collapse3" class="panel-collapse collapse" style="margin:12px">
 
 <p><b>Topics:</b> Overview of Tidyverse: tidyr, dplyr, ggplot2, readr, purrr</p>
 
@@ -128,9 +128,9 @@ title: Course outline and readings
 <a data-toggle="collapse" href="#collapse5">Week 5: 10/11. Visualizations</a>
 </h2>
 </div>
-<div id="collapse5" class="panel-collapse collapse in" style="margin:12px">
+<div id="collapse5" class="panel-collapse collapse" style="margin:12px">
 
-<p><b>Topics:</b> Introduction to visualizations. Static visualizations like ggplot2. Interactive visualizations using HTMLWidgets.</p>
+<p><b>Topics:</b> Introduction to visualizations. ggplot2. Interactive visualizations using HTMLWidgets.</p>
 
 <h4>Background material</h4>
 <ul>
@@ -162,7 +162,7 @@ title: Course outline and readings
 <a data-toggle="collapse" href="#collapse6">Week 6: 10/18. Acquiring Data (APIs)</a>
 </h2>
 </div>
-<div id="collapse6" class="panel-collapse collapse in" style="margin:12px">
+<div id="collapse6" class="panel-collapse collapse" style="margin:12px">
 
 <p><b>Topics:</b> Define API's. Twitter's Public API (REST and Stream). Facebook API.</p>
 
@@ -205,7 +205,7 @@ title: Course outline and readings
 <a data-toggle="collapse" href="#collapse7">Week 7: 10/25. Social Networks</a>
 </h2>
 </div>
-<div id="collapse7" class="panel-collapse collapse in" style="margin:12px">
+<div id="collapse7" class="panel-collapse collapse" style="margin:12px">
 
 <p><b>Topics:</b> Basic concepts in social network analysis. Centrality measures. Network visualization.</p>
 
@@ -242,7 +242,7 @@ title: Course outline and readings
 <a data-toggle="collapse" href="#collapse8">Week 8: 11/01. Machine Learning</a>
 </h2>
 </div>
-<div id="collapse8" class="panel-collapse collapse in" style="margin:12px">
+<div id="collapse8" class="panel-collapse collapse" style="margin:12px">
 
 <p><b>Topics:</b> Predictive versus explanatory analysis. Evaluation: Holdout/Cross Validation. Supervised and unsupervised machine learning. Regularization. </p>
 
@@ -274,7 +274,7 @@ title: Course outline and readings
 <a data-toggle="collapse" href="#collapse9">Week 9: 11/08. Intro to Text</a>
 </h2>
 </div>
-<div id="collapse9" class="panel-collapse collapse in" style="margin:12px">
+<div id="collapse9" class="panel-collapse collapse" style="margin:12px">
 
 <p><b>Topics:</b> Regular expressions. Work frequencies, TF-IDF and Zipf's Law. tidytext and quanteda</p>
 
@@ -313,7 +313,7 @@ title: Course outline and readings
 <a data-toggle="collapse" href="#collapse10">Week 10: 11/15. Text-as-Data</a>
 </h2>
 </div>
-<div id="collapse10" class="panel-collapse collapse in" style="margin:12px">
+<div id="collapse10" class="panel-collapse collapse" style="margin:12px">
 
 <p><b>Topics:</b> Text as Data. Supervised (Text Classification) and Unsupervised Models (Topic Models, Word Scaling and Word Embedding)</p>
 
