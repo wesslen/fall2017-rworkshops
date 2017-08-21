@@ -1,5 +1,5 @@
 ---
-title: Course outline and readings
+title: Workshop series schedule
 ---
 
 <div class="panel-group">
@@ -95,7 +95,7 @@ title: Course outline and readings
 <a data-toggle="collapse" href="#collapse4">Week 4: 09/27. Reproducible Research</a>
 </h2>
 </div>
-<div id="collapse4" class="panel-collapse collapse in" style="margin:12px">
+<div id="collapse4" class="panel-collapse collapse" style="margin:12px">
 
 <p><b>Topics:</b> R Markdown. Introduction to Git</p>
 
