@@ -2,7 +2,7 @@
 title: Help me help you
 ---
 
-> This help page was created by [Jeffrey Arnold](http://www.jrnold.me/). It was better than anything I could ever make and he deserves all of the credit for this phenomenal resource.*
+> This help page was created by [Jeffrey Arnold](http://www.jrnold.me/). It was better than anything I could ever make and he deserves all of the credit for this phenomenal resource.
 
 A good place to start is [Rstudio's guide for getting help with R]( https://support.rstudio.com/hc/en-us/articles/200552336-Getting-Help-with-R)
 
@@ -23,6 +23,7 @@ See more instructions [here](http://stackoverflow.com/questions/5963269/how-to-m
 A benefit of this approach, is that often by trying to reproduce with minimal code you will be able to debug the code itself.
 
 Finally, include the results of `sessionInfo()`.
+
 This provides information about the exact versions of R, loaded packages, and operating system you are using, which can be useful in debugging problems.
 ```{r}
 sessionInfo()
