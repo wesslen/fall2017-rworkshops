@@ -320,7 +320,7 @@ title: Workshop series schedule
 </div>
 <div id="collapse9" class="panel-collapse collapse" style="margin:12px">
 
-<p><b>Topics:</b> Regular expressions. Work frequencies, TF-IDF and Zipf's Law. tidytext and quanteda</p>
+<p><b>Topics:</b> Regular expressions. Bag of words. Word frequencies, TF-IDF and Zipf's Law. tidytext and quanteda</p>
 
 <h4>Reference material</h4>
 <ul>
