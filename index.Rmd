@@ -109,7 +109,7 @@ Science should be open, and this course builds up other open licensed material, 
 
 The design and a lot of content of this course is based on materials by [Pablo Barberá](http://pablobarbera.com/). The layout for this website was designed by [Jeffrey Arnold](http://www.jrnold.me/).
 
-For advanced users, I strongly recommend Pablo's [Fall 2017 USC Measurement Models and Statistical Computing Course](https://github.com/pablobarbera/POIR613) or Benjamin Soltoff's [U of Chicago Computing for the Social Sciences Course](http://cfss.uchicago.edu/index.html). 
+For advanced users, I strongly recommend Pablo's [Fall 2017 USC Measurement Models and Statistical Computing Course](https://github.com/pablobarbera/POIR613), Benjamin Soltoff's [U of Chicago Computing for the Social Sciences Course](http://cfss.uchicago.edu/index.html) or Jenny Bryan's [U of British Columbia STAT 545 Course](http://stat545.com/). 
 
 Pablo's materials referenced work from:
 
@@ -130,6 +130,8 @@ Pablo's materials referenced work from:
 * [Karsten Donnay](http://www.karstendonnay.net/)
 
 My materials referenced work from:
+
+* [Jenny Bryan](https://github.com/jennybc)
 
 * [Brooke Anderson](https://github.com/geanders/)
 
