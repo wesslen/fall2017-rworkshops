@@ -320,7 +320,7 @@ title: Workshop series schedule
 </div>
 <div id="collapse9" class="panel-collapse collapse" style="margin:12px">
 
-<p><b>Topics:</b> Regular expressions. Bag of words. Word frequencies, TF-IDF and Zipf's Law. tidytext and quanteda</p>
+<p><b>Topics:</b> Regular expressions. Bag of words. Word frequencies, TF-IDF and Zipf's Law. Dictionary-based methods.</p>
 
 <h4>Reference material</h4>
 <ul>
@@ -347,7 +347,7 @@ title: Workshop series schedule
 <div class="panel panel-default">
 <div class="panel-heading">
 <h2 id="week-10" class="panel-title">
-<a data-toggle="collapse" href="#collapse10">Week 10: 11/16. Text-as-Data</a>
+<a data-toggle="collapse" href="#collapse10">Week 10: 11/16. Text as Data</a>
 </h2>
 </div>
 <div id="collapse10" class="panel-collapse collapse" style="margin:12px">
@@ -368,11 +368,11 @@ title: Workshop series schedule
 </li>
 <li><p>Lowe, W. (2008). <a href="http://www.jstor.org/stable/25791945">Understanding wordscores</a>. <i>Political Analysis</i>, 16(4), 356-371.</p>
 </li>
-<li><p>Gentzkow, M., Kelly, B. T., & Taddy, M. (2017). <a href="https://ssrn.com/abstract=2934001">Text as Data</a> Working paper.</p>
-</li>
-<li><p>Mikolov, T., Chen, K., Corrado, G., & Dean, J. (2013). <a href="https://arxiv.org/pdf/1301.3781.pdf">Efficient estimation of word representations in vector space.</a> arXiv preprint arXiv:1301.3781.</p>
+<li><p>Gentzkow, M., Kelly, B. T., & Taddy, M. (2017). <a href="https://ssrn.com/abstract=2934001">Text as Data</a>, Working paper.</p>
 </li>
 <li><p>Denny, M. J., & Spirling, A. (2017). <a href="http://www.nyu.edu/projects/spirling/documents/preprocessing.pdf">Text preprocessing for unsupervised learning: why it matters, when it misleads, and what to do about it.</a> Working paper, New York University.</p>
+</li>
+<li><p>Mikolov, T., Chen, K., Corrado, G., & Dean, J. (2013). <a href="https://arxiv.org/pdf/1301.3781.pdf">Efficient estimation of word representations in vector space.</a> arXiv preprint arXiv:1301.3781.</p>
 </li>
 </ul>
 
