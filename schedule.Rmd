@@ -23,9 +23,9 @@ title: Workshop series schedule
 
 <h4>Code</h4>
 <ul>
-<li><p>Grolemund G., & Wickham, H. (2017). <a href="http://r4ds.had.co.nz/workflow-basics.html"> Workflow Basics</a> <i>R for Data Science</i> </p>
+<li><p>Grolemund G., & Wickham, H. (2017). <a href="http://r4ds.had.co.nz/workflow-basics.html"> Workflow Basics</a>. <i>R for Data Science</i>. </p>
 </li>
-<li><p>Grolemund G., & Wickham, H. (2017). <a href="http://r4ds.had.co.nz/workflow-scripts.html"> Workflow Scripts</a> <i>R for Data Science</i> </p>
+<li><p>Grolemund G., & Wickham, H. (2017). <a href="http://r4ds.had.co.nz/workflow-scripts.html"> Workflow Scripts</a>. <i>R for Data Science</i>. </p>
 </li>
 
 </div>
@@ -62,9 +62,9 @@ title: Workshop series schedule
 
 <h4>Code</h4>
 <ul>
-<li><p>Grolemund G., & Wickham, H. (2017). <a href="http://r4ds.had.co.nz/data-import.html"> Data Import</a> <i>R for Data Science</i> </p>
+<li><p>Grolemund G., & Wickham, H. (2017). <a href="http://r4ds.had.co.nz/data-import.html"> Data Import</a>. <i>R for Data Science</i>. </p>
 </li>
-<li><p>Grolemund G., & Wickham, H. (2017). <a href="http://r4ds.had.co.nz/transform.html"> Data Transformation</a> <i>R for Data Science</i> </p>
+<li><p>Grolemund G., & Wickham, H. (2017). <a href="http://r4ds.had.co.nz/transform.html"> Data Transformation</a>. <i>R for Data Science</i>. </p>
 </li>
 </ul>
 
@@ -92,21 +92,21 @@ title: Workshop series schedule
 </li>
 <li><p>Soltoff, B. (2017). <a href="http://cfss.uchicago.edu/extras/cm003_slides.html">Data transformation and exploratory data analysis slides</a>. <i>Computing for the Social Sciences</i></p>
 </li>
-<li><p>R Studio (2017). <a href="https://github.com/rstudio/cheatsheets/raw/master/source/pdfs/data-transformation-cheatsheet.pdf">R Studio Data Transformation Cheatsheet .</a> </p>
+<li><p>R Studio (2017). <a href="https://github.com/rstudio/cheatsheets/raw/master/source/pdfs/data-transformation-cheatsheet.pdf">R Studio Data Transformation Cheatsheet</a>. </p>
 </li>
 </ul>
 
 <h4>Optional Readings</h4>
 <ul>
-<li><p>Bryan, J. (2017). <a href="https://jennybc.github.io/purrr-tutorial/">purrr tutorial.</a> </p>
+<li><p>Bryan, J. (2017). <a href="https://jennybc.github.io/purrr-tutorial/">purrr tutorial</a>. </p>
 </li>
 </ul>
 
 <h4>Code</h4>
 <ul>
-<li><p>Grolemund G., & Wickham, H. (2017). <a href="http://r4ds.had.co.nz/tidy-data.html"> Tidy Data</a> <i>R for Data Science</i> </p>
+<li><p>Grolemund G., & Wickham, H. (2017). <a href="http://r4ds.had.co.nz/tidy-data.html"> Tidy Data</a>. <i>R for Data Science</i>. </p>
 </li>
-<li><p>Soltoff, B. (2017). <a href="http://cfss.uchicago.edu/datawrangle_dplyr.html">`dplyr` in brief</a>. <i>Computing for the Social Sciences</i></p>
+<li><p>Soltoff, B. (2017). <a href="http://cfss.uchicago.edu/datawrangle_dplyr.html">`dplyr` in brief</a>. <i>Computing for the Social Sciences</i>. </p>
 </li>
 </ul>
 </div>
@@ -130,23 +130,23 @@ title: Workshop series schedule
 <ul>
 <li><p>Anderson, B. (2017). <a href="https://github.com/geanders/RProgrammingForResearch/raw/master/slides/CourseNotes_Week5.pdf">Week 5 Slides: Reproducible Research.</a> <i>R Programming for Research Course</i>.</p>
 </li>
-<li><p>R Studio (2016). <a href="https://www.rstudio.com/wp-content/uploads/2016/03/rmarkdown-cheatsheet-2.0.pdf">RMarkdown Cheatsheet .</a> </p>
+<li><p>R Studio (2016). <a href="https://www.rstudio.com/wp-content/uploads/2016/03/rmarkdown-cheatsheet-2.0.pdf">RMarkdown Cheatsheet</a>. </p>
 </li>
-<li><p>Wickham, H. (2015). <a href="http://r-pkgs.had.co.nz/git.html">Git and Github.</a> <i>R Packages</i> </p>
+<li><p>Wickham, H. (2015). <a href="http://r-pkgs.had.co.nz/git.html">Git and Github</a>. <i>R Packages</i>. </p>
 </li>
-<li><p><a href="http://rmarkdown.rstudio.com/lesson-1.html">RStudio RMarkdown Lessons</a></p>
+<li><p><a href="http://rmarkdown.rstudio.com/lesson-1.html">RStudio RMarkdown Lessons</a>. </p>
 </li>
 </ul>
 
 <h4>Code</h4>
 <ul>
-<li><p>Grolemund G., & Wickham, H. (2017).<a href="http://r4ds.had.co.nz/r-markdown.html"> RMarkdown</a> <i>R for Data Science</i> </p>
+<li><p>Grolemund G., & Wickham, H. (2017).<a href="http://r4ds.had.co.nz/r-markdown.html"> RMarkdown</a>. <i>R for Data Science</i>. </p>
 </li>
-<li><p>Grolemund G., & Wickham, H. (2017). <a href="http://r4ds.had.co.nz/r-markdown-formats.html"> RMarkdown Formats</a> <i>R for Data Science</i> </p>
+<li><p>Grolemund G., & Wickham, H. (2017). <a href="http://r4ds.had.co.nz/r-markdown-formats.html"> RMarkdown Formats</a>. <i>R for Data Science</i>. </p>
 </li>
-<li><p>Bryan, J. (2017).<a href="https://speakerdeck.com/jennybc/ubc-stat545-2015-cm001-intro-to-course"> STAT545 Course 1 Slides</a></p>
+<li><p>Bryan, J. (2017).<a href="https://speakerdeck.com/jennybc/ubc-stat545-2015-cm001-intro-to-course"> STAT545 Course 1 Slides</a>. </p>
 </li>
-<li><p>Bryan, J. (2017).<a href="http://happygitwithr.com/big-picture.html"> Happy with Git and GitHub for the useR</a></p>
+<li><p>Bryan, J. (2017).<a href="http://happygitwithr.com/big-picture.html"> Happy with Git and GitHub for the useR</a>. </p>
 </li>
 </ul>
 
@@ -185,13 +185,13 @@ title: Workshop series schedule
 </li>
 <li><p>Grolemund G., & Wickham, H. (2017). <a href="http://r4ds.had.co.nz/exploratory-data-analysis.html">Exploratory Data Analysis.</a> <i>R for Data Science</i>. </p>
 </li>
-<li><p><a href="https://plot.ly/r/">HTML Widget: plotly (R)</a></p>
+<li><p><a href="https://plot.ly/r/">HTML Widget: plotly (R)</a>. </p>
 </li>
-<li><p><a href="https://rstudio.github.io/leaflet/">HTML Widget: leaflet</a></p>
+<li><p><a href="https://rstudio.github.io/leaflet/">HTML Widget: leaflet</a>. </p>
 </li>
-<li><p><a href="https://hrbrmstr.github.io/streamgraph/">HTML Widget: streamgraph</a></p>
+<li><p><a href="https://hrbrmstr.github.io/streamgraph/">HTML Widget: streamgraph</a>. </p>
 </li>
-<li><p><a href="http://datastorm-open.github.io/visNetwork/">HTML Widget: visNetwork</a></p>
+<li><p><a href="http://datastorm-open.github.io/visNetwork/">HTML Widget: visNetwork</a>. </p>
 </li>
 </ul>
 
@@ -220,7 +220,7 @@ title: Workshop series schedule
 
 <h4>Optional Readings</h4>
 <ul>
-<li><p>Barberá, P. (2017). <a href="https://github.com/pablobarbera/POIR613/raw/master/slides/03-scraping.pdf"> Scraping the Web </a>. <i> POIR 613: Measurement Models and Statistical Computing</i></p>
+<li><p>Barberá, P. (2017). <a href="https://github.com/pablobarbera/POIR613/raw/master/slides/03-scraping.pdf"> Scraping the Web </a>. <i> POIR 613: Measurement Models and Statistical Computing</i>. </p>
 </li>
 <li><p>Tufekci, Z. (2014). <a href="https://arxiv.org/pdf/1403.7400.pdf"> Big questions for social media big data: Representativeness, validity and other methodological pitfalls.</a> arXiv preprint arXiv:1403.7400.<p>
 </li>
