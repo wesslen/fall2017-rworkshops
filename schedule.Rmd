@@ -13,13 +13,20 @@ title: Workshop series schedule
 <div id="collapse1" class="panel-collapse collapse" style="margin:12px">
 <p><b>Topics:</b> Introduction to R and R Studio. Packages. Working Directory. Dataframes and functions.</p>
 
-<h4>Workshop material</h4>
+<h4>Reference material</h4>
 <ul>
 <li><p>Anderson, B. (2017). <a href="https://github.com/geanders/RProgrammingForResearch/raw/master/slides/CourseNotes_Week1.pdf">Week 1 Slides: Preliminaries in R.</a> <i>R Programming for Research Course</i>.</p>
 </li>
 <li><p>R Studio (2017). <a href="https://www.rstudio.com/wp-content/uploads/2016/01/rstudio-IDE-cheatsheet.pdf">R Studio IDE Cheatsheet.</a> </p>
 </li>
 </ul>
+
+<h4>Code</h4>
+<ul>
+<li><p>Grolemund G., & Wickham, H. (2017). <a href="http://r4ds.had.co.nz/workflow-basics.html"> Workflow Basics</a> <i>R for Data Science</i> </p>
+</li>
+<li><p>Grolemund G., & Wickham, H. (2017). <a href="http://r4ds.had.co.nz/workflow-scripts.html"> Workflow Scripts</a> <i>R for Data Science</i> </p>
+</li>
 
 </div>
 </div>
@@ -37,7 +44,7 @@ title: Workshop series schedule
 
 <p><b>Topics:</b> Importing data (csv, Stata, SAS). Data wrangling (reshape, reshape2). Aggregation and filtering (dplyr).</p>
 
-<h4>Workshop material</h4>
+<h4>Reference material</h4>
 <ul>
 <li><p>Anderson, B. (2017). <a href="https://github.com/geanders/RProgrammingForResearch/raw/master/slides/CourseNotes_Week2.pdf">Week 2 Slides: Entering & Cleaning Data.</a> <i>R Programming for Research Course</i>.</p>
 </li>
@@ -53,10 +60,19 @@ title: Workshop series schedule
 </li>
 </ul>
 
+<h4>Code</h4>
+<ul>
+<li><p>Grolemund G., & Wickham, H. (2017). <a href="http://r4ds.had.co.nz/data-import.html"> Data Import</a> <i>R for Data Science</i> </p>
+</li>
+<li><p>Grolemund G., & Wickham, H. (2017). <a href="http://r4ds.had.co.nz/transform.html"> Data Transformation</a> <i>R for Data Science</i> </p>
+</li>
+</ul>
 
 </div>
 </div>
 </div>
+
+
 
 <div class="panel-group">
 <div class="panel panel-default">
@@ -70,7 +86,7 @@ title: Workshop series schedule
 <p><b>Topics:</b> Overview of Tidyverse: tidyr, dplyr, ggplot2, readr, purrr</p>
 
 
-<h4>Workshop material</h4>
+<h4>Reference material</h4>
 <ul>
 <li><p>R Studio (2017). <a href="https://www.tidyverse.org/">Tidyverse.</a> </p>
 </li>
@@ -88,6 +104,8 @@ title: Workshop series schedule
 
 <h4>Code</h4>
 <ul>
+<li><p>Grolemund G., & Wickham, H. (2017). <a href="http://r4ds.had.co.nz/tidy-data.html"> Tidy Data</a> <i>R for Data Science</i> </p>
+</li>
 <li><p>Soltoff, B. (2017). <a href="http://cfss.uchicago.edu/datawrangle_dplyr.html">`dplyr` in brief</a>. <i>Computing for the Social Sciences</i></p>
 </li>
 </ul>
@@ -108,7 +126,7 @@ title: Workshop series schedule
 
 <p><b>Topics:</b> R Markdown. Introduction to Git</p>
 
-<h4>Workshop material</h4>
+<h4>Reference material</h4>
 <ul>
 <li><p>Anderson, B. (2017). <a href="https://github.com/geanders/RProgrammingForResearch/raw/master/slides/CourseNotes_Week5.pdf">Week 5 Slides: Reproducible Research.</a> <i>R Programming for Research Course</i>.</p>
 </li>
@@ -116,19 +134,22 @@ title: Workshop series schedule
 </li>
 <li><p>Wickham, H. (2015). <a href="http://r-pkgs.had.co.nz/git.html">Git and Github.</a> <i>R Packages</i> </p>
 </li>
+<li><p><a href="http://rmarkdown.rstudio.com/lesson-1.html">RStudio RMarkdown Lessons</a></p>
+</li>
 </ul>
 
 <h4>Code</h4>
 <ul>
-<li><p>Wickham, H. (2017).<a href="http://r4ds.had.co.nz/r-markdown.html"> RMarkdown</a> <i>R for Data Science</i> </p>
+<li><p>Grolemund G., & Wickham, H. (2017).<a href="http://r4ds.had.co.nz/r-markdown.html"> RMarkdown</a> <i>R for Data Science</i> </p>
+</li>
+<li><p>Grolemund G., & Wickham, H. (2017). <a href="http://r4ds.had.co.nz/r-markdown-formats.html"> RMarkdown Formats</a> <i>R for Data Science</i> </p>
 </li>
 <li><p>Bryan, J. (2017).<a href="https://speakerdeck.com/jennybc/ubc-stat545-2015-cm001-intro-to-course"> STAT545 Course 1 Slides</a></p>
 </li>
 <li><p>Bryan, J. (2017).<a href="http://happygitwithr.com/big-picture.html"> Happy with Git and GitHub for the useR</a></p>
 </li>
-<li><p><a href="http://rmarkdown.rstudio.com/lesson-1.html">RStudio RMarkdown Lessons</a></p>
-</li>
 </ul>
+
 
 </div>
 </div>
@@ -147,7 +168,7 @@ title: Workshop series schedule
 
 <p><b>Topics:</b> Introduction to visualizations. ggplot2. Interactive visualizations using HTMLWidgets.</p>
 
-<h4>Workshop material</h4>
+<h4>Reference material</h4>
 <ul>
 <li><p>R Studio. (2017) <a href="http://www.htmlwidgets.org/">R Studio HTML Widgets</a>.</p>
 </li>
@@ -157,9 +178,12 @@ title: Workshop series schedule
 </li>
 </ul>
 
+
 <h4>Code</h4>
 <ul>
-<li><p><a href="">ggplot2</a></p>
+<li><p>Grolemund G., & Wickham, H. (2017). <a href="http://r4ds.had.co.nz/data-visualisation.html">Data Visualization (ggplot2).</a> <i>R for Data Science</i>. </p>
+</li>
+<li><p>Grolemund G., & Wickham, H. (2017). <a href="http://r4ds.had.co.nz/exploratory-data-analysis.html">Exploratory Data Analysis.</a> <i>R for Data Science</i>. </p>
 </li>
 <li><p><a href="https://plot.ly/r/">HTML Widget: plotly (R)</a></p>
 </li>
@@ -186,7 +210,7 @@ title: Workshop series schedule
 
 <p><b>Topics:</b> Define API's. Twitter's Public API (REST and Stream). Facebook API.</p>
 
-<h4>Workshop material</h4>
+<h4>Reference material</h4>
 <ul>
 <li><p>Kearney, M. (2017). <a href="https://mkearney.github.io/rtweet/index.html"> rtweet </a>. GitHub repository.</p>
 </li>
@@ -229,7 +253,7 @@ title: Workshop series schedule
 
 <p><b>Topics:</b> Basic concepts in social network analysis. Centrality measures. Network visualization.</p>
 
-<h4>Workshop material</h4>
+<h4>Reference material</h4>
 <ul>
 <li><p>Ognyanova, K. (2017). <a href="http://kateto.net/network-visualization">Network visualization with R</a>. <i> POLNET 2017 Workshop</i>, Columbus, OH.<p>
 </li>
@@ -266,7 +290,7 @@ title: Workshop series schedule
 
 <p><b>Topics:</b> Predictive versus explanatory analysis. Evaluation: Holdout/Cross Validation. Supervised and unsupervised machine learning. Regularization. </p>
 
-<h4>Background material</h4>
+<h4>Reference material</h4>
 <ul>
 <li><p>Mullainathan, S. & Spiess, J. (2017). <a href="https://www.aeaweb.org/articles?id=10.1257/jep.31.2.87">Machine Learning: An Applied Econometric Approach</a>. <i>Journal of Economic Perspectives</i>, 31(2), 87-106.</p>
 </li>
@@ -298,7 +322,7 @@ title: Workshop series schedule
 
 <p><b>Topics:</b> Regular expressions. Work frequencies, TF-IDF and Zipf's Law. tidytext and quanteda</p>
 
-<h4>Workshop material</h4>
+<h4>Reference material</h4>
 <ul>
 <li><p>Silge, J. & Robinson, D. (2017) <a href="https://cran.r-project.org/web/packages/tidytext/vignettes/tidytext.html">Introduction to `tidytext`</a>.</p>
 </li>
@@ -313,13 +337,6 @@ title: Workshop series schedule
 <li><p>Tausczik, Y. R., & Pennebaker, J. W. (2010). <a href="http://journals.sagepub.com/doi/abs/10.1177/0261927X09351676">The psychological meaning of words: LIWC and computerized text analysis methods</a>. <i>Journal of language and social psychology</i>, 29(1), 24-54.</p></li>
 </ul>
 
-<h4>Code</h4>
-<ul>
-<li><p><a href="">Basics in text using `tidytext`</a></p>
-</li>
-<li><p><a href="">quanteda</a></p>
-</li>
-</ul>
 </div>
 </div>
 </div>
@@ -337,7 +354,7 @@ title: Workshop series schedule
 
 <p><b>Topics:</b> Text as Data. Supervised (Text Classification) and Unsupervised Models (Topic Models, Word Scaling and Word Embedding)</p>
 
-<h4>Background material</h4>
+<h4>Reference material</h4>
 <ul>
 <li><p>Blei, D. M. (2012). <a href="http://dl.acm.org/citation.cfm?id=2133826">Probabilistic topic models.</a> <i>Communications of the ACM</i>, 55(4), 77-84.</p>
 </li>
@@ -370,3 +387,4 @@ title: Workshop series schedule
 </div>
 </div>
 </div>
+
