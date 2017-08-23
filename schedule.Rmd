@@ -185,13 +185,7 @@ title: Workshop series schedule
 </li>
 <li><p>Grolemund G., & Wickham, H. (2017). <a href="http://r4ds.had.co.nz/exploratory-data-analysis.html">Exploratory Data Analysis.</a> <i>R for Data Science</i>. </p>
 </li>
-<li><p><a href="https://plot.ly/r/">HTML Widget: plotly (R)</a>. </p>
-</li>
-<li><p><a href="https://rstudio.github.io/leaflet/">HTML Widget: leaflet</a>. </p>
-</li>
-<li><p><a href="https://hrbrmstr.github.io/streamgraph/">HTML Widget: streamgraph</a>. </p>
-</li>
-<li><p><a href="http://datastorm-open.github.io/visNetwork/">HTML Widget: visNetwork</a>. </p>
+<li><p>HTML Widgets: <a href="https://plot.ly/r/">plotly</a>, <a href="https://rstudio.github.io/leaflet/">leaflet</a>, <a href="https://hrbrmstr.github.io/streamgraph/">streamgraph</a>, <a href="http://datastorm-open.github.io/visNetwork/">visNetwork</a>.</p>
 </li>
 </ul>
 
