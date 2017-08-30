@@ -27,6 +27,8 @@ title: Workshop series schedule
 </li>
 <li><p>Grolemund G., & Wickham, H. (2017). <a href="http://r4ds.had.co.nz/workflow-scripts.html"> Workflow Scripts</a>. <i>R for Data Science</i>. </p>
 </li>
+<li><p><a href="https://gist.github.com/wesslen/ae9aca04b491a064764b13239fb17489"> Intro Twitter R Script</a>. </p>
+</li>
 
 </div>
 </div>
@@ -124,7 +126,7 @@ title: Workshop series schedule
 </div>
 <div id="collapse4" class="panel-collapse collapse" style="margin:12px">
 
-<p><b>Topics:</b> R Markdown. Introduction to Git</p>
+<p><b>Topics:</b> R Markdown and Bookdown. Introduction to Git</p>
 
 <h4>Reference material</h4>
 <ul>
@@ -295,7 +297,7 @@ title: Workshop series schedule
 
 <h4>Code</h4>
 <ul>
-<li><p><a href="">Supervised Machine Learning</a></p>
+<li><p><a href="https://topepo.github.io/caret/index.html">Supervised Machine Learning: `caret` tutorial</a></p>
 </li>
 <li><p><a href="">Unsupervised Machine Learning</a></p>
 </li>

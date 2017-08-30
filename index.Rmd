@@ -38,9 +38,15 @@ Participants should bring their own laptops (if you want to run the code) with R
 
 <table class = "table table-striped table-hover">
 <tr>
-<td><b>Workshop Meetings</b></td>
+<td><b>Workshops Meetings: Weeks 1-3</b></td>
 <td>Thursdays</td>
-<td> TBD </td>
+<td>1:00 pm&ndash;4:00 pm</td>
+<td><a href="https://maps.uncc.edu/#/?nav=PLdbs&ctr=35.30514900000002,-80.733199&z=17&blnd=t,cc-parking,cc-amenities&pop=520E6424-C3EF-4B64-BDEF-352D7C8AD02C">Cone 208</a></td>
+</tr>
+<tr>
+<td><b>Workshops Meetings: Weeks 4-10</b></td>
+<td>Thursdays</td>
+<td>1:00 pm&ndash;4:00 pm</td>
 <td><a href="">TBD</a></td>
 </tr>
 <tr>
@@ -109,7 +115,7 @@ Science should be open, and this course builds up other open licensed material, 
 
 The design and a lot of content of this course is based on materials by [Pablo Barberá](http://pablobarbera.com/). The layout for this website was designed by [Jeffrey Arnold](http://www.jrnold.me/).
 
-For advanced users, I strongly recommend Pablo's [Fall 2017 USC Measurement Models and Statistical Computing Course](https://github.com/pablobarbera/POIR613), Benjamin Soltoff's [U of Chicago Computing for the Social Sciences Course](http://cfss.uchicago.edu/index.html) or Jenny Bryan's [U of British Columbia STAT 545 Course](http://stat545.com/). 
+For advanced users, I strongly recommend Pablo's [Fall 2017 USC Measurement Models and Statistical Computing Course](http://pablobarbera.com/POIR613), Benjamin Soltoff's [U of Chicago Computing for the Social Sciences Course](http://cfss.uchicago.edu/index.html) or Jenny Bryan's [U of British Columbia STAT 545 Course](http://stat545.com/). 
 
 Pablo's materials reference work from:
 
