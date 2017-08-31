@@ -40,13 +40,13 @@ Participants should bring their own laptops (if you want to run the code) with R
 <tr>
 <td><b>Workshops Meetings: Weeks 1-3</b></td>
 <td>Thursdays</td>
-<td>1:00 pm&ndash;4:00 pm</td>
+<td>1:30 pm&ndash;4:00 pm</td>
 <td><a href="https://maps.uncc.edu/#/?nav=PLdbs&ctr=35.30514900000002,-80.733199&z=17&blnd=t,cc-parking,cc-amenities&pop=520E6424-C3EF-4B64-BDEF-352D7C8AD02C">Cone 208</a></td>
 </tr>
 <tr>
 <td><b>Workshops Meetings: Weeks 4-10</b></td>
 <td>Thursdays</td>
-<td>1:00 pm&ndash;4:00 pm</td>
+<td>1:30 pm&ndash;4:00 pm</td>
 <td><a href="">TBD</a></td>
 </tr>
 <tr>
