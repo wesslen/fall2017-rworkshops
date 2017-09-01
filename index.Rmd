@@ -77,9 +77,7 @@ Each session is divided into three sections:
 
 3. Computational social science tools (social network, machine learning and text) 
 
-Each workshop is standalone -- so participants aren't required to come to all although each workshop will build off the skills from previous workshops.
-
-Participants in the later workshops are **strongly** encouraged to review materials from at least the first three workshops.
+Workshop signups are on a individual basis (e.g., each workshop must be registered). Given that workshops build off skills from the first section, participants in the later workshops are **strongly** encouraged to review materials from at least the first three workshops.
 
 # Prerequisites
 
