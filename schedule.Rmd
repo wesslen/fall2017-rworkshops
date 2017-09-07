@@ -32,6 +32,8 @@ title: Workshop series schedule
 </li>
 <li><p><a href="https://gist.github.com/wesslen/ae9aca04b491a064764b13239fb17489"> Intro Twitter R Script</a>. </p>
 </li>
+<li><p><a href="http://vnijs.github.io/radiant/"> R Radiant Package for Statistics & Machine Learning</a>. </p>
+</li>
 
 </div>
 </div>
