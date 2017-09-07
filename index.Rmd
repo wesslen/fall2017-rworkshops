@@ -107,11 +107,19 @@ Alternatively, you can use [Docker](https://www.docker.com/) either locally ([Ma
 
 For Python users more use to Jupyter notebooks, see this [Docker Hub repository](https://hub.docker.com/r/jupyter/datascience-notebook/). There are other alternatives so don't feel obligated to use this Docker Hub. 
 
+# Slack #rstats Group
+
+I've created a [Slack](https://slack.com/) group named #rstats. You can join here: [https://rstats-uncc.slack.com](https://join.slack.com/t/rstats-uncc/shared_invite/MjM2MDIwMDU2MzQwLTE1MDQ1MzczOTgtYjA5ZGVkMDI5Mw). You can sign up for a free (but limited) account to join.
+
+The goal of these channels is to create a forum for general R questions. Ideally, if I can enlist a few other power R users, this will enable faster replies and help than just from me.
+
+I'm still learning Slack so if you've used it before and have recommendations or ideas, please let me know.
+
 # License and credit
 
 Science should be open, and this course builds up other open licensed material, so unless otherwise noted, all materials for this class are licensed under a <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
 
-The design and a lot of content of this course is based on materials by [Pablo Barberá](http://pablobarbera.com/). The layout for this website was designed by [Jeffrey Arnold](http://www.jrnold.me/).
+The design of this course is based on materials by [Pablo Barberá](http://pablobarbera.com/). The layout for this website was designed by [Jeffrey Arnold](http://www.jrnold.me/).
 
 For advanced users, I strongly recommend Pablo's [Fall 2017 USC Measurement Models and Statistical Computing Course](http://pablobarbera.com/POIR613), Benjamin Soltoff's [U of Chicago Computing for the Social Sciences Course](http://cfss.uchicago.edu/index.html) or Jenny Bryan's [U of British Columbia STAT 545 Course](http://stat545.com/). 
 
