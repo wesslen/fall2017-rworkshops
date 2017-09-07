@@ -63,9 +63,9 @@ Participants should bring their own laptops (if you want to run the code) with R
 </tr>
 </table>
 
-Consulting hours are walk-in for now (although, please email me to reserve times). 
+For consulting appointments, please see [this link](https://projectmosaic.uncc.edu/consulting-services/).
 
-We're working on redesigning the Project Mosaic consultation reservation website 
+Walk-ins (aka day of) appointments are possible during these times but please email me first to confirm.
 
 # Series structure
 
