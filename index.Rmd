@@ -87,7 +87,7 @@ Later sessions will assume knowledge of materials from the first three workshops
 
 # Software 
 
-This course will use [R](https://www.r-project.org/), which is a free and open-source programming language primarily used for statistics and data analysis. 
+This course will use [R](http://archive.linux.duke.edu/cran/), which is a free and open-source programming language primarily used for statistics and data analysis. 
 
 We will also use [RStudio](https://www.rstudio.com/), which is an easy-to-use interface GUI for R. 
 
