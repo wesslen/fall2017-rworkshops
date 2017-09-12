@@ -30,7 +30,7 @@ title: Workshop series schedule
 </li>
 <li><p>Grolemund G., & Wickham, H. (2017). <a href="http://r4ds.had.co.nz/workflow-scripts.html"> Workflow Scripts</a>. <i>R for Data Science</i>. </p>
 </li>
-<li><p><a href="https://gist.github.com/wesslen/ae9aca04b491a064764b13239fb17489"> Intro Twitter R Script</a>. </p>
+<li><p><a href="https://gist.github.com/wesslen/ae9aca04b491a064764b13239fb17489"> Intro Twitter R Script</a>. </p> <p><a href="https://github.com/wesslen/RVisTutorial/raw/master/RTutorialTwitter.zip"> Zip File </a>. </p>
 </li>
 <li><p><a href="http://vnijs.github.io/radiant/"> R Radiant Package for Statistics & Machine Learning</a>. </p>
 </li>
@@ -49,7 +49,7 @@ title: Workshop series schedule
 </div>
 <div id="collapse2" class="panel-collapse collapse" style="margin:12px">
 
-<p><b>Topics:</b> Importing data (csv, Stata, SAS). Data wrangling (reshape, reshape2). Aggregation and filtering (dplyr).</p>
+<p><b>Topics:</b> Importing data (csv, Stata, SAS). Data wrangling, aggregation and filtering (dplyr).</p>
 <p><b>Registration:</b> <a href="https://projectmosaic.uncc.edu/events/r-essentials-part-2/">Sign-up Link.</a></p>
 
 <h4>Reference material</h4>
@@ -60,19 +60,19 @@ title: Workshop series schedule
 </li>
 </ul>
 
-<h4>Optional Readings</h4>
-<ul>
-<li><p>R Studio (2017). <a href="https://www.rstudio.com/resources/webinars/importing-data-into-r/">R Studio Importing Data into R Webinar.</a> </p>
-</li>
-<li><p>Wickham, H. (2017). <a href="http://adv-r.had.co.nz/Data-structures.html">Data Structures.</a> <i>Advanced R</i>. </p>
-</li>
-</ul>
-
 <h4>Code</h4>
 <ul>
 <li><p>Grolemund G., & Wickham, H. (2017). <a href="http://r4ds.had.co.nz/data-import.html"> Data Import</a>. <i>R for Data Science</i>. </p>
 </li>
 <li><p>Grolemund G., & Wickham, H. (2017). <a href="http://r4ds.had.co.nz/transform.html"> Data Transformation</a>. <i>R for Data Science</i>. </p>
+</li>
+</ul>
+
+<h4>Optional Readings</h4>
+<ul>
+<li><p>R Studio (2017). <a href="https://www.rstudio.com/resources/webinars/importing-data-into-r/">R Studio Importing Data into R Webinar.</a> </p>
+</li>
+<li><p>Wickham, H. (2017). <a href="http://adv-r.had.co.nz/Data-structures.html">Data Structures.</a> <i>Advanced R</i>. </p>
 </li>
 </ul>
 
@@ -104,6 +104,14 @@ title: Workshop series schedule
 </li>
 </ul>
 
+<h4>Code</h4>
+<ul>
+<li><p>Grolemund G., & Wickham, H. (2017). <a href="http://r4ds.had.co.nz/tidy-data.html"> Tidy Data</a>. <i>R for Data Science</i>. </p>
+</li>
+<li><p>Soltoff, B. (2017). <a href="http://cfss.uchicago.edu/datawrangle_dplyr.html">`dplyr` in brief</a>. <i>Computing for the Social Sciences</i>. </p>
+</li>
+</ul>
+
 <h4>Optional Readings</h4>
 <ul>
 <li><p>Bryan, J. (2017). <a href="https://jennybc.github.io/purrr-tutorial/">purrr tutorial</a>. </p>
@@ -112,13 +120,6 @@ title: Workshop series schedule
 </li>
 </ul>
 
-<h4>Code</h4>
-<ul>
-<li><p>Grolemund G., & Wickham, H. (2017). <a href="http://r4ds.had.co.nz/tidy-data.html"> Tidy Data</a>. <i>R for Data Science</i>. </p>
-</li>
-<li><p>Soltoff, B. (2017). <a href="http://cfss.uchicago.edu/datawrangle_dplyr.html">`dplyr` in brief</a>. <i>Computing for the Social Sciences</i>. </p>
-</li>
-</ul>
 </div>
 </div>
 </div>
@@ -223,17 +224,6 @@ title: Workshop series schedule
 </li>
 </ul>
 
-<h4>Optional Readings</h4>
-<ul>
-<li><p>Barberá, P. (2017). <a href="https://github.com/pablobarbera/POIR613/raw/master/slides/03-scraping.pdf"> Scraping the Web </a>. <i> POIR 613: Measurement Models and Statistical Computing</i>. </p>
-</li>
-<li><p>Tufekci, Z. (2014). <a href="https://arxiv.org/pdf/1403.7400.pdf"> Big questions for social media big data: Representativeness, validity and other methodological pitfalls.</a> arXiv preprint arXiv:1403.7400.<p>
-</li>
-<li><p>Morstatter, F., & Liu, H. (2017). <a href="http://www.public.asu.edu/~fmorstat/paperpdfs/osnem_preprint.pdf"> Discovering, assessing, and mitigating data bias in social media.</a> Online Social Networks and Media, 1, 1-13.<p>
-</li>
-</ul>
-
-
 <h4>Code</h4>
 <ul>
 <li><p><a href="">Twitter REST API</a></p>
@@ -241,6 +231,16 @@ title: Workshop series schedule
 <li><p><a href="">Twitter Streaming API</a></p>
 </li>
 <li><p><a href="">Facebook API</a></p>
+</li>
+</ul>
+
+<h4>Optional Readings</h4>
+<ul>
+<li><p>Barberá, P. (2017). <a href="https://github.com/pablobarbera/POIR613/raw/master/slides/03-scraping.pdf"> Scraping the Web </a>. <i> POIR 613: Measurement Models and Statistical Computing</i>. </p>
+</li>
+<li><p>Tufekci, Z. (2014). <a href="https://arxiv.org/pdf/1403.7400.pdf"> Big questions for social media big data: Representativeness, validity and other methodological pitfalls.</a> arXiv preprint arXiv:1403.7400.<p>
+</li>
+<li><p>Morstatter, F., & Liu, H. (2017). <a href="http://www.public.asu.edu/~fmorstat/paperpdfs/osnem_preprint.pdf"> Discovering, assessing, and mitigating data bias in social media.</a> Online Social Networks and Media, 1, 1-13.<p>
 </li>
 </ul>
 </div>
