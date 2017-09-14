@@ -58,7 +58,7 @@ title: Workshop series schedule
 </li>
 <li><p>R Studio (2017). <a href="https://github.com/rstudio/cheatsheets/raw/master/source/pdfs/data-import-cheatsheet.pdf">R Studio Data Import Cheatsheet.</a> </p>
 </li>
-<li><p><a href="/code/week-2/week2workshop.zip">Zip File (Data, Code).</p>
+<li><p><a href="https://wesslen.github.io/fall2017-rworkshops/code/week-2/week2workshop.zip">Zip File (Data, Code).</a></p>
 </li>
 </ul>
 
@@ -75,6 +75,8 @@ title: Workshop series schedule
 <li><p>R Studio (2017). <a href="https://www.rstudio.com/resources/webinars/importing-data-into-r/">R Studio Importing Data into R Webinar.</a> </p>
 </li>
 <li><p>Wickham, H. (2017). <a href="http://adv-r.had.co.nz/Data-structures.html">Data Structures.</a> <i>Advanced R</i>. </p>
+</li>
+<li><p><a href="http://webpages.uncc.edu/rwesslen/blogs/01-beerandtweeting.html">Beer in Charlotte (Twitter Tutorial) Blog Post</a> </p>
 </li>
 </ul>
 
