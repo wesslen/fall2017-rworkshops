@@ -58,6 +58,8 @@ title: Workshop series schedule
 </li>
 <li><p>R Studio (2017). <a href="https://github.com/rstudio/cheatsheets/raw/master/source/pdfs/data-import-cheatsheet.pdf">R Studio Data Import Cheatsheet.</a> </p>
 </li>
+<li><p><a href="/code/week-2/week2workshop.zip">Zip File (Data, Code).</p>
+</li>
 </ul>
 
 <h4>Code</h4>
