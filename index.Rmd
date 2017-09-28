@@ -38,16 +38,10 @@ Participants should bring their own laptops (if you want to run the code) with R
 
 <table class = "table table-striped table-hover">
 <tr>
-<td><b>Workshops Meetings: Weeks 2-3</b></td>
+<td><b>Workshops Meetings</b></td>
 <td>Thursdays</td>
 <td>1:30 pm&ndash;4:00 pm</td>
-<td><a href="https://maps.uncc.edu/#/?nav=Pldbs&ctr=35.307124719006715,-80.73032088060383&z=16&blnd=t,cc-parking,cc-amenities&pop=9CBEA07B-2D19-4101-8F47-8E6191595A88">CHHS 386</a></td>
-</tr>
-<tr>
-<td><b>Workshops Meetings: Weeks 4-10</b></td>
-<td>Thursdays</td>
-<td>1:30 pm&ndash;4:00 pm</td>
-<td><a href="">TBD</a></td>
+<td><a href="https://maps.uncc.edu/#/?nav=PLdbs&ctr=35.306328,-80.72998500000001&z=17&blnd=t,cc-parking,cc-amenities&pop=FB2C2706-A964-4ED2-833F-ADAA61A00BC2">Friday 155</a></td>
 </tr>
 <tr>
 <td><b>Consulting Hours</b></td>
@@ -98,6 +92,8 @@ Simply go to both links and download the latest versions of R and R Studio local
 **Alternative: Docker**
 
 Alternatively, you can use [Docker](https://www.docker.com/) either locally ([Mac](https://www.docker.com/docker-mac) or [Windows](https://www.docker.com/docker-windows)) or using a temporary instance at [play-with-docker.com](http://labs.play-with-docker.com/).
+
+I **strongly** recommend [this tutorial by Sean Ross](http://seankross.com/2017/09/17/Enough-Docker-to-be-Dangerous.html) to introduce Docker.
 
 * Once you have docker installed, run "docker run -d -p 8787:8787 rocker/tidyverse". After the image download is complete, go to [http://localhost#8787](http://localhost#8787) link to open the browser. 
 

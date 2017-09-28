@@ -1,0 +1,291 @@
+---
+title: "tidyverse"
+author: "Ryan Wesslen"
+date: "September 27, 2017"
+output: ioslides_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+library(tidyverse)
+```
+
+## Tidyverse
+
+The tidyverse is an opinionated collection of R packages designed for data science. 
+
+All packages share an underlying philosophy ('tidy') and common APIs. 
+
+```{r out.width = "400px", fig.align="center"}
+knitr::include_graphics("./img/tidyverse.jpeg")
+```
+
+<https://www.tidyverse.org/>
+
+## Tidyverse Packages
+
+```{r out.width = "800px", fig.align="center"}
+knitr::include_graphics("./img/tidyverse1.png")
+```
+
+## tidy
+
+```{r out.width = "800px", fig.align="center"}
+knitr::include_graphics("./img/tidy-1.png")
+```
+
+- Each variable must have its own column.
+- Each observation must have its own row.
+- Each value must have its own cell.
+
+<http://r4ds.had.co.nz/tidy-data.html>
+
+## tidying data: example 1
+
+For example, which of these two datasets are tidy?
+
+**Tuberculous Cases for Afghanistan, Brazil & China: 1999-2000**
+
+```{r}
+table1
+```
+
+## tidying data: example 2
+
+```{r}
+table2
+```
+
+
+## tidying functions: spread
+
+```{r out.width = "800px", fig.align="center"}
+knitr::include_graphics("./img/tidy-spread.png")
+```
+
+Replace reshape (R) and/or "pivot" (Excel) table function. 
+
+<http://tidyr.tidyverse.org/>
+
+## tidying with `spread`
+
+```{r echo = TRUE}
+spread(table2, key = type, value = count)
+```
+
+## Why tidyverse?
+
+```{r out.width = "500px", fig.align="center"}
+knitr::include_graphics("./img/tidyverse-vs-base.png")
+```
+
+## Two Schools of Thought for Teaching R
+
+**Base R first:** 
+
+- Teach syntax such as $ and [[]], loops and conditionals, data types, etc. 
+
+- Possibly introduce dplyr or data.table as alternatives.
+    
+**Tidyverse first:** 
+
+- Keep a single-minded focus on data frames and dplyr; introduce ggplot2, tidyr and purrr shortly afterwards. 
+
+- Introduce the %>% operator; skip syntax like [[]] and $ for  later. 
+
+David Robinson: <http://varianceexplained.org/r/teach-tidyverse/>
+
+## Teach the Tidyverse to Beginners
+
+- Get students doing *powerful things quickly.*
+
+- Don’t teach procedural logic (loops and conditionals)
+
+  - Teach tables (group by and join).
+
+- %>% ("piping") isn’t too hard for beginners
+
+- "There’s only one way to do it"
+
+- Conclusion: You have permission not to be boring
+
+David Robinson: <http://varianceexplained.org/r/teach-tidyverse/>
+
+## dplyr: Six Core Functions
+
+- `mutate()` adds new variables that are functions of existing variables
+- `select()` picks variables based on their names.
+- `filter()` picks cases based on their values.
+- `summarise()` reduces multiple values down to a single summary.
+- `arrange()` changes the ordering of the rows.
+- `group_by()` aggregates values by group categories.
+
+<http://dplyr.tidyverse.org/>
+
+## dplyr 
+
+Load csv (readr) and use dplyr functions.
+
+```{r echo=TRUE, message=FALSE}
+tweets <- read_csv("../data/CharlotteTweets20Sample.csv") # readr function
+df <- group_by(tweets, geo.type)
+summarise(df, Count = n())
+```
+
+## dplyr with piping (%>%)
+
+```{r echo=TRUE}
+df <- group_by(tweets, geo.type)
+summarise(df, Count = n())
+```
+
+```{r echo=TRUE}
+tweets %>%
+  group_by(geo.type) %>%
+  summarise(Count=n())
+```
+
+## Piping gets really helpful for long commands...
+
+```{r echo=TRUE}
+tweets %>% 
+  group_by(actor.location.displayName) %>%
+  summarise(Count=n()) %>%
+  arrange(desc(Count)) %>%
+  head(n=5)
+```
+
+## ggplot2: Visualizations
+
+```{r, include=FALSE}
+df <- tweets %>% 
+  group_by(actor.location.displayName) %>%
+  summarise(Count=n()) %>%
+  arrange(desc(Count)) %>%
+  head(n=25)
+
+df$actor.location.displayName <- factor(df$actor.location.displayName, 
+                                        levels = df$actor.location.displayName[order(df$Count)])
+```
+
+```{r fig.height=4, echo=TRUE}
+ggplot(df, aes(x = actor.location.displayName, y = Count)) + 
+  geom_bar(stat = "identity") + coord_flip() +
+  labs(x = "Profile Location", y = "Number of Tweets", 
+       title = "Top 25 Profile Locations of Geolocated Clt Tweets")
+```
+
+## purrr: functional programming
+
+```{r}
+col <- c("name","height","mass","species")
+starwars <- starwars[,col]
+```
+
+Let's start with the starwars dataset.
+
+```{r echo=TRUE, message=FALSE}
+head(starwars, n=5)
+```
+
+## purrr: functional programming
+
+Regression of height on mass and by simplified species (species2)...
+
+```{r echo=TRUE}
+starwars %>%
+  mutate(species2 = ifelse(species == "Human", species, "non-Human")) %>%
+  split(.$species2) %>% # from base R
+  map(~ lm(mass ~ height, data = .)) %>% # linear regression
+  map(summary) %>% # keep the summary output
+  map_dbl("r.squared")
+```
+
+<http://purrr.tidyverse.org/>
+
+## broom
+
+```{r echo=TRUE}
+lmFit <- starwars %>%
+  mutate(species2 = ifelse(species == "Human", species, "non-Human")) %>%
+  split(.$species2) %>% # from base R
+  map(~ lm(mass ~ height, data = .))
+```
+
+```{r echo=TRUE, message=FALSE}
+library(broom)
+tidy(lmFit[[1]]) # regression for human
+```
+
+```{r echo=TRUE}
+tidy(lmFit[[2]]) # regression for non-human
+```
+
+<https://cran.r-project.org/web/packages/broom/vignettes/broom.html>
+
+## rvest for webscraping
+
+```{r echo=TRUE, message=FALSE}
+library(rvest)
+lego_movie <- read_html("http://www.imdb.com/title/tt1490017/")
+
+lego_movie %>% 
+  html_nodes("strong span") %>%
+  html_text() %>%
+  as.numeric()
+```
+
+## rvest for webscraping
+
+```{r echo=TRUE, message=FALSE}
+lego_movie %>%
+  html_nodes("#titleCast .itemprop span") %>%
+  html_text()
+```
+
+<https://github.com/hadley/rvest>
+
+## tidytext for simple text analysis
+
+```{r}
+library(tidytext)
+data("stop_words")
+stop_words <- rbind(stop_words, data.frame(word = c("https","t.co","amp","http"), 
+                                           lexicon = c("twitter","twitter","twitter","twitter")))
+```
+
+```{r echo=TRUE, message=FALSE}
+library(tidytext)
+tidy_tweets <- tweets %>% 
+  unnest_tokens(word, body) %>% # tokenize body column
+  anti_join(stop_words) %>% # remove stop words
+  count(word, sort = TRUE) # count by tokens
+head(tidy_tweets, n = 5)
+```
+<https://cran.r-project.org/web/packages/tidytext/vignettes/tidytext.html>
+
+## Other important packages
+
+- haven <http://haven.tidyverse.org/>
+
+- readxl <http://readxl.tidyverse.org/>
+
+- lubridate <http://lubridate.tidyverse.org/>
+
+- stringr <http://stringr.tidyverse.org/>
+
+- forcats <http://forcats.tidyverse.org/>
+
+- packrat <https://rstudio.github.io/packrat/>
+
+## Future: R Markdown for Replication
+
+This document is a R Markdown presentation (ioslides). 
+
+Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. 
+
+```{r out.width = "250px", fig.align="center"}
+knitr::include_graphics("./img/rmarkdown.png")
+```
+
+For examples on using R Markdown, see <http://rmarkdown.rstudio.com/gallery.html>.

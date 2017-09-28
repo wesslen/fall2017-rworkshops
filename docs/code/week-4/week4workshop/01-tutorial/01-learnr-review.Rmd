@@ -1,0 +1,155 @@
+---
+title: "Tutorial"
+output: learnr::tutorial
+runtime: shiny_prerendered
+---
+
+```{r setup, include=FALSE}
+library(learnr); library(tidyverse)
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+
+## Tidyverse
+
+### Example
+
+Let's have a quick review of material.
+
+```{r quiz}
+quiz(
+  question("What is tidyverse?",
+    answer("R packages for machine learning only."),
+    answer("R packages that automate (tidy) cleaning datasets."),
+    answer("Collection of R packages under the tidy philosophy.", correct = TRUE),
+    answer("A waste of time. Base R is the only true way to learn R.")
+  ),
+  question("What are the three tidy principles?", type = "multiple",
+    answer("Each record is an observation.", correct = TRUE),
+    answer("Each variable is its own column.", correct = TRUE),
+    answer("Each value is a cell.", correct = TRUE),
+    answer("Data should be stored in a way to minimize its size.",
+           message = "See tidyr package website: http://tidyr.tidyverse.org/")
+  ),
+    question("What are core packages in tidyverse?", type = "multiple",
+    answer("dplyr", correct = TRUE),
+    answer("readr", correct = TRUE),
+    answer("ggplot2", correct = TRUE),
+    answer("purrr", correct = TRUE),
+    answer("tidyr", correct = TRUE)
+  ),
+    question("What is piping (%>%)?", 
+    answer("A function that overcomplicates data analysis."),
+    answer("A simple way to link multiple functions, read left to right.", correct = TRUE),
+    answer("A way to find out what inputs a function uses.")
+  ),
+   question("If you get an error message in R, what's the first thing you should do?",
+    answer("Call 911"),
+    answer("Sound the warning to Ryan (email, call, whatever it takes...)."),
+    answer("Take a breath, copy the error, then Google it!", correct = TRUE),
+    answer("Give up on R/programming and do everything in Excel.")
+   )
+)
+```
+
+### Run `tidyverse`
+
+```{r call-tidyverse, exercise=TRUE}
+
+```
+
+This assumes you have the package `tidyverse`. Recall, what do you need to do if you do not have it?
+
+## Data Wrangling Review
+
+### Exercise with Hint
+
+Use the mtcars (it's built in, no need to load) to run the following examples.
+
+### Head function
+
+Modify the following code to limit the number of rows printed to 5:
+
+```{r print-limit, exercise=TRUE, exercise.eval=TRUE}
+mtcars
+```
+
+```{r print-limit-hint}
+head(mtcars)
+```
+
+How would you modify this to look at the first 8 rows?
+
+```{r print-limit-2, exercise=TRUE}
+
+```
+
+```{r print-limit-hint-2}
+head(mtcars, n = 8)
+```
+
+### Filter function
+
+Use the filter() function to subset only includes records for cars with 4 or 6 cylinders.
+
+```{r filter, exercise=TRUE, exercise.eval=TRUE}
+mtcars
+```
+
+```{r filter-hint}
+filter(mtcars, cyl %in% c("4","6"))
+```
+
+### Piping
+
+Now rewrite that to use piping (%>%) and keep only the first five rows.
+
+```{r filter2, exercise=TRUE}
+
+```
+
+```{r filter2-hint}
+mtcars %>% 
+  filter(cyl %in% c("4","6")) %>%
+  head(n = 5)
+```
+
+### Group By
+
+Next, using the piping operation, count the number of records by cylinder groups.
+
+```{r groupby, exercise=TRUE}
+
+```
+
+```{r groupby-hint}
+mtcars %>% 
+  filter(cyl %in% c("4","6")) %>%
+  group_by(cyl) %>%
+  summarise(Count=n())
+```
+
+### Count
+
+An even simpler way to rewrite the previous code is to use the count() function.
+
+For example:
+
+```{r count, exercise=TRUE}
+filter(mtcars, cyl %in% c("4","6")) %>%
+  count(cyl)
+```
+
+### dplyr functions
+
+Let's review the dplyr functions.
+
+```{r quiz2}
+quiz(
+  question("Which are the six dplyr functions?",
+    answer("clean, import, subset, reduce, map, export"),
+    answer("summarise, group_by, mutate, select, filter, arrange", correct = TRUE),
+    answer("lm, rm, ls, post, pre, download"),
+    answer("read_csv, write_csv, read_tsv, write_tsv, read_xls, write_xls")
+  )
+)

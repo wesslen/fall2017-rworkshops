@@ -1,0 +1,142 @@
+---
+title: "My First R Markdown File"
+author: "Ryan Wesslen"
+date: "September 28, 2017"
+output:
+  html_document: default
+---
+
+## Loading Data
+
+Let's get started. First, we can write text to describe what we're doing next.
+
+For example, let's load `tidyverse`.
+
+```{r tidyverse}
+library(tidyverse)
+```
+
+Next, let's use the `read_csv()` function load our dataset.
+
+```{r load-data}
+tweets <- read_csv("../data/CharlotteTweets20Sample.csv")
+```
+
+Recall -- what's going on with the path? 
+
+Why have we not needed to set our working directory?
+
+### View Data
+
+We can use the `###` parameter to specify a new section. For example, in this section, let's consider looking at the first five tweets.
+
+```{r}
+head(tweets$body, n = 3)
+```
+
+## Getting a time series of the Tweets
+
+Next, let's convert the date to allow us to plot our data.
+
+```{r}
+# converts YYYY-MM-DD HH:MM:SS to string of YYYY-MM-DD
+tweets$day <- as.Date(tweets$postedTime)
+
+# recall from dplyr
+dayCount <- tweets %>%
+  group_by(day) %>%
+  summarise(Count=n())
+```
+
+Next, we're going to use `ggplot2` to plot our time series. We'll formally introduce ggplot more next week.
+
+```{r}
+ggplot(dayCount, aes(x = day, y = Count)) +
+      geom_line() 
+```
+
+Not bad. We can add a few parameters to this plot to make it pretty.
+
+```{r}
+ggplot(dayCount, aes(x = day, y = Count)) +
+      geom_line() +
+      labs(x = "Posted Day", y = "Tweet Count", title = "Charlotte Geo Tweets per Day") +
+      expand_limits(y = 0) # set y axis to start at zero
+```
+
+What the heck are those spikes?
+
+## Hashtag & Mentions
+
+One way we can check is to look at the most prominent hashtags and mentions.
+
+To do this, we can run a pre-specified function ([regular expression](https://www.rstudio.com/wp-content/uploads/2016/09/RegExCheatsheet.pdf)) that will keep only hashtags or handles from the body of our tweet.
+
+```{r}
+getCommonHashtags <- function(text, n=20){
+  hashtags <- regmatches(text, gregexpr("#(\\d|\\w)+",text))
+  hashtags <- unlist(hashtags)
+  tab <- table(hashtags)
+  return(head(sort(tab, dec=TRUE), n=n))
+}
+
+getCommonHandles <- function(text, n=20){
+  handles <- regmatches(text, gregexpr('@([0-9_A-Za-z]+)',text, perl=TRUE))
+  handles <- unlist(handles)
+  tab <- table(handles)
+  return(head(sort(tab, dec=TRUE), n=n))
+}
+```
+
+For example, now we can run:
+
+```{r}
+getCommonHashtags(tweets$body)
+```
+
+or ...
+
+```{r}
+getCommonHandles(tweets$body)
+```
+
+Ah... maybe they're Carolina Panther related!
+
+## Searching for Panther Tweets
+
+Let's use a different regular expression and save only the tweets that include three keywords...
+
+```{r}
+panthers <- c("#keeppounding", "#panthers", "@panthers")
+
+# find only the Tweets that contain words in the first list
+hit <- grepl(paste(panthers, collapse = "|"), tolower(tweets$body))
+
+# create a column to separate panther tweets and non-Panther tweets
+tweets$pantherFlag <- ifelse(hit, "Panther Tweet", "Non-Panther Tweet")
+```
+
+With our new flag, let's rerun our time series but differentiate between Panther and non-Panther tweets.
+
+```{r}
+dayCount <- tweets %>%
+  group_by(day, pantherFlag) %>%
+  summarise(Count=n())
+```
+
+Next, we're going to use `ggplot2` to plot our time series. We'll formally introduce ggplot more next week.
+
+```{r}
+ggplot(dayCount, aes(x = day, y = Count, color = pantherFlag)) +
+      geom_line() +
+      labs(x = "Posted Day", y = "Tweet Count", title = "Charlotte Geo Tweets per Day") +
+      expand_limits(y = 0) # set y axis to start at zero 
+```
+
+This is a good start, but it still looks like we may have missed some Tweets.
+
+Querying Twitter data is an incredibly hard problem (much harder than many researchers realize!).
+
+For example, [King, Lam and Roberts (2017)](https://gking.harvard.edu/publications/computer-assisted-keyword-and-document-set-discovery-fromunstructured-text) investigates this problem and finds that the choice of keywords can drastically affect results.
+
+For a deeper analysis, see my [Fall 2016 Twitter Workshop Day 1](https://cdn.rawgit.com/wesslen/fall-2016-pm-twitter-text/44b3a896/Day1/exercise1.html) Exercise.

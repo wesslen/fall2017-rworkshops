@@ -146,23 +146,25 @@ title: Workshop series schedule
 <ul>
 <li><p>Anderson, B. (2017). <a href="https://github.com/geanders/RProgrammingForResearch/raw/master/slides/CourseNotes_Week5.pdf">Week 5 Slides: Reproducible Research.</a> <i>R Programming for Research Course</i>.</p>
 </li>
-<li><p>R Studio (2016). <a href="https://www.rstudio.com/wp-content/uploads/2016/03/rmarkdown-cheatsheet-2.0.pdf">RMarkdown Cheatsheet</a>. </p>
+<li><p><a href="https://wesslen.github.io/fall2017-rworkshops/code/week-4/week4workshop.zip">Zip File (Data, Code).</a></p>
 </li>
-<li><p>Wickham, H. (2015). <a href="http://r-pkgs.had.co.nz/git.html">Git and Github</a>. <i>R Packages</i>. </p>
+<li><p>Bryan, J. (2017).<a href="https://speakerdeck.com/jennybc/ubc-stat545-2015-cm001-intro-to-course"> STAT545 Course 1 Slides</a>. </p>
 </li>
-<li><p><a href="http://rmarkdown.rstudio.com/lesson-1.html">RStudio RMarkdown Lessons</a>. </p>
+<li><p>Bryan, J. (2017).<a href="http://happygitwithr.com/big-picture.html"> Happy with Git and GitHub for the useR</a>. </p>
 </li>
 </ul>
 
-<h4>Code</h4>
+<h4>Optional Readings</h4>
 <ul>
 <li><p>Grolemund G., & Wickham, H. (2017).<a href="http://r4ds.had.co.nz/r-markdown.html"> RMarkdown</a>. <i>R for Data Science</i>. </p>
 </li>
 <li><p>Grolemund G., & Wickham, H. (2017). <a href="http://r4ds.had.co.nz/r-markdown-formats.html"> RMarkdown Formats</a>. <i>R for Data Science</i>. </p>
 </li>
-<li><p>Bryan, J. (2017).<a href="https://speakerdeck.com/jennybc/ubc-stat545-2015-cm001-intro-to-course"> STAT545 Course 1 Slides</a>. </p>
+<li><p>R Studio (2016). <a href="https://www.rstudio.com/wp-content/uploads/2016/03/rmarkdown-cheatsheet-2.0.pdf">RMarkdown Cheatsheet</a>. </p>
 </li>
-<li><p>Bryan, J. (2017).<a href="http://happygitwithr.com/big-picture.html"> Happy with Git and GitHub for the useR</a>. </p>
+<li><p><a href="http://rmarkdown.rstudio.com/lesson-1.html">RStudio RMarkdown Lessons</a>. </p>
+</li>
+<li><p>Wickham, H. (2015). <a href="http://r-pkgs.had.co.nz/git.html">Git and Github</a>. <i>R Packages</i>. </p>
 </li>
 </ul>
 
