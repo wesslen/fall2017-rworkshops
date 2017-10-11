@@ -188,6 +188,8 @@ title: Workshop series schedule
 
 <h4>Reference material</h4>
 <ul>
+<li><p><a href="https://wesslen.github.io/fall2017-rworkshops/code/week-5/week5workshop.zip">Zip File (Data, Code).</a></p>
+</li>
 <li><p>R Studio. (2017) <a href="http://www.htmlwidgets.org/">R Studio HTML Widgets</a>.</p>
 </li>
 <li><p>R Studio. (2017) <a href="http://shiny.rstudio.com/">R Studio Shiny</a>.</p>
