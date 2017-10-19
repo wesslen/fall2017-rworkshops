@@ -230,16 +230,7 @@ title: Workshop series schedule
 </li>
 <li><p>Barberá, P. (2017). <a href="https://github.com/pablobarbera/Rfacebook"> Rfacebook </a>. GitHub repository.</p>
 </li>
-</ul>
-
-<h4>Code</h4>
-<ul>
-<li><p><a href="">Twitter REST API</a></p>
-</li>
-<li><p><a href="">Twitter Streaming API</a></p>
-</li>
-<li><p><a href="">Facebook API</a></p>
-</li>
+<li><p><a href="https://wesslen.github.io/fall2017-rworkshops/code/week-6/week6workshop.zip">Zip File (Data, Code).</a></p>
 </ul>
 
 <h4>Optional Readings</h4>

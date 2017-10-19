@@ -1,0 +1,135 @@
+---
+title: "Social Media Data"
+author: "Ryan Wesslen"
+date: "19 Oct 2017"
+output:
+  iosp::ioslides_plus:
+    box_colours:
+      orange: "darkorange"
+      slate: "slateblue2"
+      yellow: ["yellow", "gold2"]
+      grgold: ["springgreen4", header_text: "#FFD700"]
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(rtweet); library(tidyverse)
+```
+
+## Overview
+
+### Social Media Data {.col-10 .box .bg-green}
+
+- How to Collect
+- Querying Social Media
+- Biases & Ethics
+
+### Hands on: Twitter API {.col-10 .box .bg-yellow}
+
+- RESTful: Current Tweets, Profile, Friends/Followers
+- Streaming: Future Tweets
+- "Big Data" Streaming
+
+### Hands on: Facebook API {.col-10 .box .bg-orange}
+
+- Searching public pages
+- Scraping public pages
+- Public page comments & likes
+
+## Collecting Social Media Data {.build}
+
+### Two Different Methods {.col-12 .box .bg-green}
+
+- Web scraping: extract data from tagged source code of website
+- Web APIs (application programming interface): use structured https requests that return JSON or XML files
+
+### Two Types of APIs {.col-12 .box .bg-green}
+
+- RESTful API's: queries for static data at current moment
+- Streaming API's: changes in users' data in real time (future)
+
+### Limitations {.col-12 .box .bg-green}
+
+- API's limited to public data, subject to rate and historical limits
+- Identify the best platform, **not** necessarily the easiest.
+
+%end%
+
+## Potential Issues {.vs1}
+
+While there are opportunities in social media data, there are difficulties:
+
+### Difficult Learning Curve {.bg-yellow .box-11}
+
+>- API's & [data limitations](https://developer.twitter.com/en/docs/tweets/search/overview) 
+>- [JSON](https://github.com/jimmoffitt/json2csv/blob/master/templates/tweet_standard.json) & [data formatting](https://developer.twitter.com/en/docs/tweets/data-dictionary/overview/intro-to-tweet-json)
+>- [Big data](http://www.bitbybitbook.com/en/observing-behavior/data/) & [scaling up](https://blog.insightdatascience.com/getting-started-with-aws-serverless-architecture-tutorial-on-kinesis-and-dynamodb-using-twitter-38a1352ca16d)
+>- Self selection bias & [Representativeness](https://arxiv.org/pdf/1403.7400.pdf) 
+>- Missing data (e.g., [geospatial](https://developer.twitter.com/en/docs/tutorials/tweet-geo-metadata))
+>- [Querying data](https://developer.twitter.com/en/docs/tweets/data-dictionary/guides/tweet-timeline#filtering_tips) is harder than you think ([King, Lam, & Roberts, 2017](https://gking.harvard.edu/publications/computer-assisted-keyword-and-document-set-discovery-fromunstructured-text))
+>- [Power laws](https://arxiv.org/abs/0706.1062) & 80/20 rule
+>- [Bot or not bot](https://botometer.iuni.iu.edu/#!/)? The rise of [human-directed accounts](https://blog.twitter.com/official/en_us/topics/company/2017/Update-Russian-Interference-in-2016--Election-Bots-and-Misinformation.html#Human-Directed%20Accounts)
+>- Unstructured data: text, images, urls, social network [GitHub](https://github.com/wesslen/summer2017-socialmedia)
+>- Observational; difficult to run [experiments](http://www.bitbybitbook.com/en/running-experiments/) [(unless you're Zuck)](http://www.radiolab.org/story/trust-engineers/) 
+>- [Ethics](http://www.bitbybitbook.com/en/ethics/ethics-intro/); role of IRB? [informed consent](http://www.wbur.org/cognoscenti/2014/07/15/experiment-facebook-steven-brykman)? [deletions](http://faculty.washington.edu/kstarbi/maddock_starbird_tweet_deletions.pdf)?
+
+%end%
+
+## Bots, ethics, and experimentation | Discussion
+
+```{r, echo = FALSE}
+#devtools::install_github("ijlyttle/vembedr")
+vembedr::embed_youtube("u4NnZkxW3bY")
+```
+
+[Washington Post on Munger, 2017](https://www.washingtonpost.com/news/monkey-cage/wp/2016/11/17/this-researcher-programmed-bots-to-fight-racism-on-twitter-it-worked/)
+
+## Note about third party research | Twitter Blog {.vcenter}
+
+> **Studies of the impact of bots and automation on Twitter necessarily and systematically under-represent our enforcement actions because these defensive actions are not visible via our API**, and because they take place shortly after content is created and delivered via our streaming API. Furthermore, researchers using an API often overlook the substantial in-product features that prioritize the most relevant content. Based on user interests and choices, we limit the visibility of low-quality content using tools such as Quality Filter and Safe Search -- both of which are on by default for all of Twitter’s users and active for more than 97% of users.
+
+Source: [Twitter Blog, Sept 28, 2017](https://blog.twitter.com/official/en_us/topics/company/2017/Update-Russian-Interference-in-2016--Election-Bots-and-Misinformation.html)
+
+> “Research conducted by third parties through our search API about the impact of bots and misinformation on Twitter is almost always inaccurate and methodologically flawed,” Twitter said.
+
+Source: [Washington Post, Sept 28, 2017](https://www.washingtonpost.com/business/technology/2017/09/27/32855bba-a3a0-11e7-ade1-76d061d56efa_story.html?utm_term=.51bd63e08c06)
+
+## [`rtweet`](http://rtweet.info/articles/auth.html): REST and Streaming Twitter with R {.flexbox .vcenter}
+
+- Open `01-rtweet-restapi.R` from `/01-rtweet/` folder.
+
+- Based on the [rtweet authorization tutorial](http://rtweet.info/articles/auth.html).
+
+## Get/Call Package | lines 4-7 {.vcenter}
+
+```{r eval=FALSE}
+# install from CRAN (uncomment out)
+# install.packages("rtweet")
+
+# load rtweet & tidyverse
+library(rtweet); library(tidyverse)
+```
+
+## Create a Twitter API App {.build}
+
+### Create Twitter app {.col-11 .box .bg-green}
+
+- Go to [apps.twitter.com](https://apps.twitter.com/) and create a new app by providing a Name (rtweet_token), Description, and Website of your choosing.
+
+### Callback URL {.col-11 .box .bg-green}
+
+-  **Important**: use http://127.0.0.1:1410 for the Callback URL field.
+
+### Accept Terms {.col-11 .box .bg-green}
+
+- Check **yes** if you agree and then click “Create your Twitter application”.
+
+## Run Examples {.vcenter}
+
+- /01-rtweet/01-rtweet-restapi.R
+
+- /01-rtweet/02-rtweet-streaming.R
+
+- /01-rtweet/03-rtweet-streaming-large.R
+
+- /02-Rfacebook/facebook-api.Rmd
