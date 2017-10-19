@@ -230,7 +230,7 @@ title: Workshop series schedule
 </li>
 <li><p>Barberá, P. (2017). <a href="https://github.com/pablobarbera/Rfacebook"> Rfacebook </a>. GitHub repository.</p>
 </li>
-<li><p><a href="https://wesslen.github.io/fall2017-rworkshops/code/week-6/week6workshop.zip">Zip File (Data, Code).</a></p>
+<li><p><a href="https://github.com/wesslen/fall2017-rworkshops/raw/master/code/week-6/week6workshop.zip">Zip File (Data, Code).</a></p>
 </ul>
 
 <h4>Optional Readings</h4>
