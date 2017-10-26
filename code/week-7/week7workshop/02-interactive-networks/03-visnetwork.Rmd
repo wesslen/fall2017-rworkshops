@@ -1,0 +1,108 @@
+---
+title: "GoT with visNetwork"
+author: "Ryan Wesslen"
+date: "October 25, 2017"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, message=FALSE, warning=FALSE)
+```
+
+## visNetwork
+
+Let's reload the Game of Thrones network.
+
+```{r, message=FALSE}
+library(igraph); library(tidyverse)
+edges <- read_csv("../data/GOT-edges.csv")
+g <- graph_from_data_frame(d=edges, directed=FALSE)
+```
+
+Next, let's load in the [`visNetwork`](http://datastorm-open.github.io/visNetwork/) package. Make sure to install if you don't have it.
+
+Although not required, it's easiest to create the network using the igraph object (g).
+
+```{r}
+library(visNetwork)
+visIgraph(g) %>%
+  visNodes(label = V(g)$name) %>% # adds labels of names
+  visInteraction(navigationButtons = TRUE) # adds the zoom in and out
+```
+
+Alternatively, we can create the edges into a visNetwork objects: edges and nodes.
+
+One way is to use the as_data_frame() function to pull out each element into its respective object.
+
+```{r}
+# create the links and nodes
+edges <- igraph::as_data_frame(g, what="edges")
+nodes <- igraph::as_data_frame(g, what="vertices")
+
+# node id must be name as from/to edges 
+nodes$id <- nodes$name
+```
+
+Unlike the igraph, when using nodes/edges you can add columns to indicate properties about the nodes or edges.
+
+For example, if you want the labels of the nodes, you can create a new column named `label`.
+
+```{r}
+nodes$label <- nodes$name
+
+visNetwork(nodes, edges) %>%
+  visIgraphLayout() %>% # this forces a visIgraph Layout
+  visInteraction(navigationButtons = TRUE) 
+```
+
+Let's instead make the node size relative to betweenness.
+
+First, we need to get betweenness.
+
+```{r}
+b <- betweenness(g) %>%
+  sort(decreasing=TRUE)
+
+head(b)
+```
+
+So Jon, Robert, Tyrion and Daenerys are the "gate-keepers" (highest betweenness).
+
+```{r}
+nodes$size <- ((betweenness(g) / max(betweenness(g)))+.2)*40
+
+visNetwork(nodes, edges) %>%
+  visIgraphLayout() %>% # this forces a visIgraph Layout
+  visInteraction(navigationButtons = TRUE) 
+```
+
+### Community Detection
+
+Let's run community detection using a built-in algorithm in igraph.
+
+```{r}
+clp <- cluster_label_prop(g)
+
+library(RColorBrewer) #install if you don't have it
+nodes$color.background <- brewer.pal(12, "Set3")[as.factor(clp$membership)]
+nodes$color.border <- "black"
+edges$color <- "black"
+
+visNetwork(nodes, edges) %>%
+  visIgraphLayout() %>% # this forces a visIgraph Layout
+  visInteraction(navigationButtons = TRUE) 
+```
+
+Alternatively, we can change the node shape to a circle which will put the labels inside of each node. While this is more aesthetically pleasing, this removes size as proportional to Betweenness.
+
+```{r}
+nodes$shape <- "circle"
+
+visNetwork(nodes, edges) %>%
+  visIgraphLayout() %>% # this forces a visIgraph Layout
+  visInteraction(navigationButtons = TRUE)
+```
+
+There are a TON of different customizations with visNetwork and igraph. 
+
+Also, there are other network packages in R like [`ggraph`](https://github.com/thomasp85/ggraph),  [`networkD3`](https://christophergandrud.github.io/networkD3/) and [`edgebundleR`](https://github.com/garthtarr/edgebundleR). Explore!
