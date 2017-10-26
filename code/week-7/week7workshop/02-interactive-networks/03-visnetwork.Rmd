@@ -106,3 +106,10 @@ visNetwork(nodes, edges) %>%
 There are a TON of different customizations with visNetwork and igraph. 
 
 Also, there are other network packages in R like [`ggraph`](https://github.com/thomasp85/ggraph),  [`networkD3`](https://christophergandrud.github.io/networkD3/) and [`edgebundleR`](https://github.com/garthtarr/edgebundleR). Explore!
+
+For example...
+
+```{r}
+library(edgebundleR) #install if you don't have it
+edgebundle(g, fontsize = 6)
+```

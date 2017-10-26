@@ -283,7 +283,7 @@ title: Workshop series schedule
 </li>
 <li><p>Barberá, P. (2017). <a href="http://pablobarbera.com/POIR613/code/16-networks-descriptive-analysis.html">Social network analysis with R: Descriptive analysis</a>. <i> POIR 613: Measurement Models and Statistical Computing</i>.</p>
 </li>
-<li><p><a href="code/week7/week7workshop/02-interactive-networks/03-visnetwork.html">Interactive Networks (visNetwork)</a>. </p>
+<li><p><a href="code/week-7/week7workshop/02-interactive-networks/03-visnetwork.html">Interactive Networks (visNetwork)</a>. </p>
 </li>
 <li><p><a href="https://rawgit.com/wesslen/summer2017-socialmedia/master/day2/twitter-social-networks.html">Retweet & Reply Interactive Networks with visNetwork</a>.</p>
 </li>
