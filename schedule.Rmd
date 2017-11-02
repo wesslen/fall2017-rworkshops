@@ -306,9 +306,11 @@ title: Workshop series schedule
 
 <h4>Reference material</h4>
 <ul>
-<li><p>Mullainathan, S. & Spiess, J. (2017). <a href="https://www.aeaweb.org/articles?id=10.1257/jep.31.2.87">Machine Learning: An Applied Econometric Approach</a>. <i>Journal of Economic Perspectives</i>, 31(2), 87-106.</p>
+<li><p>Mullainathan, S., & Spiess, J. (2017). <a href="https://www.aeaweb.org/articles?id=10.1257/jep.31.2.87">Machine Learning: An Applied Econometric Approach</a>. <i>Journal of Economic Perspectives</i>, 31(2), 87-106.</p>
 </li>
 <li><p>Grimmer, J. (2015). <a href="https://www.cambridge.org/core/services/aop-cambridge-core/content/view/S1049096514001784">We are all social scientists now: how big data, machine learning, and causal inference work together</a>. <i>PS: Political Science & Politics</i>, 48(1), 80-83.</p>
+</li>
+<li><p>Athey, S., & Imbens, G. (2015). <a href="http://www.nasonline.org/programs/sackler-colloquia/documents/athey.pdf">Machine Learning Methods for Causal Effects</a>. </p>
 </li>
 <li><p>Barberá, P. (2017). <a href="http://pablobarbera.com/POIR613/slides/08-supervised-learning.pdf"> Supervised Machine Learning </a>. <i> POIR 613: Measurement Models and Statistical Computing</i>. </p>
 </li>
