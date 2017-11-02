@@ -310,6 +310,8 @@ title: Workshop series schedule
 </li>
 <li><p>Grimmer, J. (2015). <a href="https://www.cambridge.org/core/services/aop-cambridge-core/content/view/S1049096514001784">We are all social scientists now: how big data, machine learning, and causal inference work together</a>. <i>PS: Political Science & Politics</i>, 48(1), 80-83.</p>
 </li>
+<li><p>Barberá, P. (2017). <a href="http://pablobarbera.com/POIR613/slides/08-supervised-learning.pdf"> Supervised Machine Learning </a>. <i> POIR 613: Measurement Models and Statistical Computing</i>. </p>
+</li>
 </ul>
 
 
@@ -319,8 +321,8 @@ title: Workshop series schedule
 </li>
 <li><p>Amunategui, M. (2014). <a href="https://amunategui.github.io/binary-outcome-modeling/">Modeling 101 - Predicting Binary Outcomes with R, gbm, glmnet, and {caret}</a></p>
 </li>
-<li><p><a href="">Unsupervised Machine Learning</a></p>
-</li>
+<li><p><a href="https://github.com/wesslen/fall2017-rworkshops/raw/master/code/week-8/week8workshop.zip">Zip File (Data, Code).</a> </p>
+</ul>
 </ul>
 </div>
 </div>
