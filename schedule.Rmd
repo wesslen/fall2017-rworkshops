@@ -266,7 +266,7 @@ title: Workshop series schedule
 <li><p>Ognyanova, K. (2017). <a href="http://kateto.net/network-visualization">Network visualization with R</a>. <i> POLNET 2017 Workshop</i>, Columbus, OH.<p>
 </li>
 <li><p><a href="https://github.com/wesslen/fall2017-rworkshops/raw/master/code/week-7/week7workshop.zip">Zip File (Data, Code).</a> </p>
-</ul>
+</li>
 </ul>
 
 <h4>Optional</h4>
@@ -324,6 +324,7 @@ title: Workshop series schedule
 <li><p>Amunategui, M. (2014). <a href="https://amunategui.github.io/binary-outcome-modeling/">Modeling 101 - Predicting Binary Outcomes with R, gbm, glmnet, and {caret}</a></p>
 </li>
 <li><p><a href="https://github.com/wesslen/fall2017-rworkshops/raw/master/code/week-8/week8workshop.zip">Zip File (Data, Code).</a> </p>
+</li>
 </ul>
 </ul>
 </div>
@@ -348,9 +349,11 @@ title: Workshop series schedule
 </li>
 <li><p>University of Vermont Complex Systems Center (2017) <a href="http://hedonometer.org">Hedonometer</a>.</p>
 </li>
-<li><p>Silge, J. & Robinson, D. (2017) <a href="https://cran.r-project.org/web/packages/tidytext/vignettes/tidytext.html">Introduction to `tidytext`</a>.</p>
+<li><p>Silge, J. & Robinson, D. (2017) <a href="https://cran.r-project.org/web/packages/tidytext/vignettes/tidytext.html">Introduction to `tidytext`</a>.<a href="https://github.com/dgrtwo/tidy-text-mining/archive/master.zip">(Zip File).</a> </p>
 </li>
 </ul>
+
+
 
 <h4>Optional Readings</h4>
 <ul>
