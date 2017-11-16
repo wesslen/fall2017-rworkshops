@@ -23,8 +23,8 @@
 <link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
 <script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
-<link href="site_libs/highlightjs-1.1/textmate.css" rel="stylesheet" />
-<script src="site_libs/highlightjs-1.1/highlight.js"></script>
+<link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
 <link href="site_libs/font-awesome-4.5.0/css/font-awesome.min.css" rel="stylesheet" />
 
 
@@ -35,10 +35,12 @@
   }
 </style>
 <script type="text/javascript">
-if (window.hljs && document.readyState && document.readyState === "complete") {
-   window.setTimeout(function() {
-      hljs.initHighlighting();
-   }, 0);
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
 }
 </script>
 
@@ -372,9 +374,9 @@ div.tocify {
 <p>Finally, include the results of <code>sessionInfo()</code>.</p>
 <p>This provides information about the exact versions of R, loaded packages, and operating system you are using, which can be useful in debugging problems.</p>
 <pre class="r"><code>sessionInfo()</code></pre>
-<pre><code>## R version 3.4.1 (2017-06-30)
+<pre><code>## R version 3.4.2 (2017-09-28)
 ## Platform: x86_64-pc-linux-gnu (64-bit)
-## Running under: Ubuntu 16.04.2 LTS
+## Running under: Ubuntu 16.04.3 LTS
 ## 
 ## Matrix products: default
 ## BLAS: /usr/lib/libblas/libblas.so.3.6.0
@@ -392,10 +394,10 @@ div.tocify {
 ## [1] stats     graphics  grDevices utils     datasets  methods   base     
 ## 
 ## loaded via a namespace (and not attached):
-##  [1] compiler_3.4.1  backports_1.1.0 magrittr_1.5    rsconnect_0.8.5
-##  [5] rprojroot_1.2   htmltools_0.3.6 tools_3.4.1     yaml_2.1.14    
-##  [9] Rcpp_0.12.13    stringi_1.1.5   rmarkdown_1.6   knitr_1.17     
-## [13] stringr_1.2.0   digest_0.6.12   evaluate_0.10.1</code></pre>
+##  [1] compiler_3.4.2  backports_1.1.0 magrittr_1.5    rprojroot_1.2  
+##  [5] htmltools_0.3.6 tools_3.4.2     yaml_2.1.14     Rcpp_0.12.13   
+##  [9] stringi_1.1.5   rmarkdown_1.7.7 knitr_1.17      stringr_1.2.0  
+## [13] digest_0.6.12   evaluate_0.10.1</code></pre>
 <p>For further discussion on how to ask good questions:</p>
 <ul>
 <li><a href="http://blog.revolutionanalytics.com/2014/01/how-to-ask-for-r-help.html">How to ask for help in R</a></li>

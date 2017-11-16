@@ -34,7 +34,7 @@ title: Workshop series schedule
 </li>
 <li><p><a href="http://vnijs.github.io/radiant/"> R Radiant Package for Statistics & Machine Learning</a>. </p>
 </li>
-
+</ul>
 </div>
 </div>
 </div>
@@ -340,10 +340,14 @@ title: Workshop series schedule
 </div>
 <div id="collapse9" class="panel-collapse collapse" style="margin:12px">
 
-<p><b>Topics:</b> Regular expressions. Bag of words. Word frequencies, TF-IDF and Zipf's Law. Dictionary-based methods.</p>
+<p><b>Topics:</b> tidytext. Bag of words. Word frequencies, TF-IDF and Zipf's Law. Dictionary-based methods.</p>
 
 <h4>Reference material</h4>
 <ul>
+<li><p>Rothenberg, M. (2017) <a href="http://emojitracker.com/">Emoji Tracker</a>.</p>
+</li>
+<li><p>University of Vermont Complex Systems Center (2017) <a href="http://hedonometer.org">Hedonometer</a>.</p>
+</li>
 <li><p>Silge, J. & Robinson, D. (2017) <a href="https://cran.r-project.org/web/packages/tidytext/vignettes/tidytext.html">Introduction to `tidytext`</a>.</p>
 </li>
 </ul>

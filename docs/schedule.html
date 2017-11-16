@@ -23,8 +23,8 @@
 <link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
 <script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
-<link href="site_libs/highlightjs-1.1/textmate.css" rel="stylesheet" />
-<script src="site_libs/highlightjs-1.1/highlight.js"></script>
+<link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
 <link href="site_libs/font-awesome-4.5.0/css/font-awesome.min.css" rel="stylesheet" />
 
 
@@ -35,10 +35,12 @@
   }
 </style>
 <script type="text/javascript">
-if (window.hljs && document.readyState && document.readyState === "complete") {
-   window.setTimeout(function() {
-      hljs.initHighlighting();
-   }, 0);
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
 }
 </script>
 
@@ -414,6 +416,7 @@ Grolemund G., &amp; Wickham, H. (2017). <a href="http://r4ds.had.co.nz/workflow-
 <a href="http://vnijs.github.io/radiant/"> R Radiant Package for Statistics &amp; Machine Learning</a>.
 </p>
 </li>
+</ul>
 </div>
 </div>
 </div>
@@ -890,12 +893,22 @@ Amunategui, M. (2014). <a href="https://amunategui.github.io/binary-outcome-mode
 </div>
 <div id="collapse9" class="panel-collapse collapse" style="margin:12px">
 <p>
-<b>Topics:</b> Regular expressions. Bag of words. Word frequencies, TF-IDF and Zipf’s Law. Dictionary-based methods.
+<b>Topics:</b> tidytext. Bag of words. Word frequencies, TF-IDF and Zipf’s Law. Dictionary-based methods.
 </p>
 <h4>
 Reference material
 </h4>
 <ul>
+<li>
+<p>
+Rothenberg, M. (2017) <a href="http://emojitracker.com/">Emoji Tracker</a>.
+</p>
+</li>
+<li>
+<p>
+University of Vermont Complex Systems Center (2017) <a href="http://hedonometer.org">Hedonometer</a>.
+</p>
+</li>
 <li>
 <p>
 Silge, J. &amp; Robinson, D. (2017) <a href="https://cran.r-project.org/web/packages/tidytext/vignettes/tidytext.html">Introduction to <code>tidytext</code></a>.
