@@ -380,7 +380,7 @@ title: Workshop series schedule
 
 <h4>Reference material</h4>
 <ul>
-<li><p>Benoit, K. et al. (2017) <a href="http://quanteda.io/articles/quickstart.html">Getting Started with `quanteda`</a>.</p>
+<li><p>Benoit, K. et al. (2017) <a href="https://tutorials.quanteda.io/">Getting Started with `quanteda`</a>.</p>
 </li>
 <li><p>Blei, D. M. (2012). <a href="http://dl.acm.org/citation.cfm?id=2133826">Probabilistic topic models.</a> <i>Communications of the ACM</i>, 55(4), 77-84.</p>
 </li>
